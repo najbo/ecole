@@ -13679,3 +13679,17 @@ Stack trace:
 #61 C:\laragon\www\ecole\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #62 C:\laragon\www\ecole\index.php(43): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #63 {main}  
+[2018-08-03 10:44:30] development.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "theme" is not defined.
+
+Did you mean one of these?
+    theme:install
+    theme:list
+    theme:remove
+    theme:use in C:\laragon\www\ecole\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 C:\laragon\www\ecole\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('theme')
+#1 C:\laragon\www\ecole\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\laragon\www\ecole\vendor\laravel\framework\src\Illuminate\Console\Application.php(88): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\laragon\www\ecole\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(121): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\laragon\www\ecole\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  

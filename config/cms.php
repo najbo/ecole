@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'activeTheme' => 'jumplink-viola',
+    'activeTheme' => 'Rainlab.Bonjour',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'backendTimezone' => 'UTC',
+    'backendTimezone' => 'Europe/Zurich',
 
     /*
     |--------------------------------------------------------------------------
