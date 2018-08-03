@@ -1,0 +1,28 @@
+fields:
+    tag_short:
+        label: Abréviation
+        span: auto
+        required: 1
+        type: text
+    tag_titre:
+        label: Titre
+        span: auto
+        required: 1
+        type: text
+    color:
+        label: Couleur
+        span: auto
+        type: colorpicker
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        preset:
+            field: tag_titre
+            type: slug
+        type: text
+    is_actif:
+        label: Switch
+        span: left
+        default: 1
+        type: switch

@@ -1,0 +1,15 @@
+# =============================================
+# Relation behavior config
+# =============================================
+
+users:
+    label: Enseignants
+    view:
+        list: $/jan/ecole/models/enseignant/columns.yaml
+        toolbarButtons: add|remove
+
+    manage: 
+        showSearch: true
+        recordsPerPage: 10
+    #     list: $/backend/models/user/columns.yaml
+    #     form: $/backend/models/user/fields.yaml

@@ -1,0 +1,29 @@
+fields:
+    abreviation:
+        label: Abréviation
+        span: auto
+        required: 1
+        type: text
+    titre:
+        label: Titre
+        span: auto
+        required: 1
+        type: text
+    deleted_at:
+        label: 'Date de suppression'
+        mode: datetime
+        span: auto
+        type: datepicker
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: abreviation
+            type: slug
+        required: 1
+        type: text
+    is_actif:
+        label: Actif
+        span: left
+        default: 1
+        type: switch

@@ -1,0 +1,25 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    is_actif :
+        label: Actifs
+        type: switch
+        default: 2
+        conditions: 
+            - is_actif = false
+            - is_actif = true
+    periode:
+        label: Année actuelle
+        type: switch
+        default: 0
+        conditions: 
+            - not (date(now()) >= debut and date(now()) <= fin)
+            - date(now()) >= debut and date(now()) <= fin
+    Annees:
+        label: Années
+        modelClass: Jan\Ecole\Models\Annee
+        scope: actifs
+        nameFrom: titre
+      #  nameColumn: id

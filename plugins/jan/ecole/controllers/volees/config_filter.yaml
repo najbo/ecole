@@ -1,0 +1,20 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    actif :
+        label: Actifs
+        type: switch
+        default: 2
+        conditions: 
+            - actif = false
+            - actif = true
+    periode:
+        label: Volées actuelles
+        type: switch
+        default: 0
+        conditions: 
+            - not (date(now()) >= debut and date(now()) <= fin)
+            - date(now()) >= debut and date(now()) <= fin
+    

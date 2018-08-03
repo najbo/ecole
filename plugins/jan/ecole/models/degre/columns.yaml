@@ -1,0 +1,41 @@
+columns:
+    annee_titre:
+        label: 'Année scolaire'
+        type: text
+        select: titre
+        relation: annee
+        cssClass: gras
+    degre:
+        label: Degré
+        type: text
+        searchable: true
+        sortable: true
+    structure_titre:
+        label: Structure
+        type: text
+        select: titre
+        relation: structure
+    volee_titre:
+        label: Volée
+        type: text
+        select: titre
+        relation: volee
+    volee_designation:
+        label: 'Désignation volée'
+        type: text
+        select: designation
+        relation: volee
+    enseignants_nbre:
+        label: 'Ens. attribués'
+        type: number
+        relation: users
+        useRelationCount: 'yes'
+    enseignants_prenom:
+        label: Enseignants
+        type: text
+        searchable: true
+        select: concat(first_name)
+        relation: users
+    is_actif:
+        label: Actif
+        type: switch

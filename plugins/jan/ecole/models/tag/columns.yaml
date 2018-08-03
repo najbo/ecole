@@ -1,0 +1,26 @@
+columns:
+    tag_short:
+        label: Abréviation
+        type: text
+        searchable: true
+        sortable: true
+        cssClass: gras
+        width: 50px
+    tag_titre:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: Slug
+        type: text
+        searchable: true
+        sortable: true
+    color:
+        label: Couleur
+        type: text
+    is_actif:
+        label: Actif
+        type: switch
+        searchable: true
+        sortable: true

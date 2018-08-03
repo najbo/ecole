@@ -1,0 +1,11 @@
+name: Tags
+modelClass: Jan\Ecole\Models\Tag
+form: $/jan/ecole/models/tag/fields.yaml
+defaultRedirect: jan/ecole/tags
+create:
+    redirect: 'jan/ecole/tags/update/:id'
+    redirectClose: jan/ecole/tags
+update:
+    redirect: jan/ecole/tags
+    redirectClose: jan/ecole/tags
+preview: {  }

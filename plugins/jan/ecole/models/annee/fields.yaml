@@ -1,0 +1,28 @@
+fields:
+    titre:
+        label: 'Année scolaire'
+        span: auto
+        required: 1
+        cssClass: gras
+        type: text
+        comment: 'Par exemple 2018-19'
+    debut:
+        label: 'Date de début'
+        mode: date
+        span: left
+        required: 1
+        type: datepicker
+        comment: 'Débute toujours un 1er août'
+        format: d.m.Y
+    fin:
+        label: 'Date de fin'
+        mode: date
+        span: auto
+        type: datepicker
+        comment: 'Termine toujours un 31 juillet'
+        format: d.m.Y
+    is_actif:
+        label: Actif
+        span: left
+        default: 1
+        type: switch

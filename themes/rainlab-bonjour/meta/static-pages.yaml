@@ -1,0 +1,9 @@
+static-pages:
+    content:
+        content-pages: {  }
+        content-content: {  }
+        content-models: {  }
+        content-urls: {  }
+    presentation:
+        presentation-ecole: {  }
+        presentation-enseignants: {  }

@@ -1,0 +1,10 @@
+name: Informations
+form: $/jan/ecole/models/infocenter/fields.yaml
+modelClass: Jan\Ecole\Models\InfoCenter
+defaultRedirect: jan/ecole/informations
+create:
+    redirect: 'jan/ecole/informations/update/:id'
+    redirectClose: jan/ecole/informations
+update:
+    redirect: jan/ecole/informations
+    redirectClose: jan/ecole/informations

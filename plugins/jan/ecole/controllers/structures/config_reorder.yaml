@@ -1,0 +1,5 @@
+title: Structures
+modelClass: Jan\Ecole\Models\Structure
+nameFrom: titre
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,369 @@
+[33mcommit 01920b9109736ea4929f4b00b43e35936c8423ff[m
+Author: Jan Boesch <info@jan-boesch.net>
+Date:   Fri Aug 3 08:15:35 2018 +0200
+
+    Initial commit.
+
+[1mdiff --git a/.env b/.env[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3208889[m
+[1m--- /dev/null[m
+[1m+++ b/.env[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32mAPP_DEBUG=true[m
+[32m+[m[32mAPP_URL=http://www.mon-ecole-tavannes.ch/[m
+[32m+[m[32mAPP_KEY=OIcpi6edAjLh4FeKDpu6K5h3Z0pwquAE[m
+[32m+[m
+[32m+[m[32mDB_CONNECTION=mysql[m
+[32m+[m[32mDB_HOST=localhost[m
+[32m+[m[32mDB_PORT=3306[m
+[32m+[m[32mDB_DATABASE=ecole[m
+[32m+[m[32mDB_USERNAME=root[m
+[32m+[m[32mDB_PASSWORD=[m
+[32m+[m[32mREDIS_HOST=127.0.0.1[m
+[32m+[m[32mREDIS_PASSWORD=null[m
+[32m+[m[32mREDIS_PORT=6379[m
+[32m+[m
+[32m+[m[32mCACHE_DRIVER=file[m
+[32m+[m
+[32m+[m[32mSESSION_DRIVER=file[m
+[32m+[m
+[32m+[m[32mQUEUE_DRIVER=sync[m
+[32m+[m
+[32m+[m[32mMAIL_DRIVER=smtp[m
+[32m+[m[32mMAIL_HOST=smtp.mailgun.org[m
+[32m+[m[32mMAIL_PORT=587[m
+[32m+[m[32mMAIL_ENCRYPTION=tls[m
+[32m+[m[32mMAIL_USERNAME=null[m
+[32m+[m[32mMAIL_PASSWORD=null[m
+[32m+[m
+[32m+[m[32mROUTES_CACHE=false[m
+[32m+[m[32mASSET_CACHE=false[m
+[32m+[m[32mLINK_POLICY=detect[m
+[32m+[m[32mENABLE_CSRF=true[m
+[32m+[m
+[1mdiff --git a/.htaccess b/.htaccess[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b964f57[m
+[1m--- /dev/null[m
+[1m+++ b/.htaccess[m
+[36m@@ -0,0 +1,59 @@[m
+[32m+[m[32m<IfModule mod_rewrite.c>[m
+[32m+[m
+[32m+[m[32m    <IfModule mod_negotiation.c>[m
+[32m+[m[32m        Options -MultiViews[m
+[32m+[m[32m    </IfModule>[m
+[32m+[m
+[32m+[m[32m    RewriteEngine On[m
+[32m+[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## You may need to uncomment the following line for some hosting environments,[m
+[32m+[m[32m    ## if you have installed to a subdirectory, enter the name here also.[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    # RewriteBase /[m
+[32m+[m[41m    [m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## Uncomment following lines to force HTTPS.[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    # RewriteCond %{HTTPS} off[m
+[32m+[m[32m    # RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L][m
+[32m+[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## Black listed folders[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    RewriteRule ^bootstrap/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^config/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^vendor/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^storage/cms/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^storage/logs/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^storage/framework/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^storage/temp/protected/.* index.php [L,NC][m
+[32m+[m[32m    RewriteRule ^storage/app/uploads/protected/.* index.php [L,NC][m
+[32m+[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## White listed folders[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} -f[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/.well-known/*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/storage/app/uploads/.*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/storage/app/media/.*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/storage/temp/public/.*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/themes/.*/(assets|resources)/.*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/plugins/.*/(assets|resources)/.*[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !/modules/.*/(assets|resources)/.*[m
+[32m+[m[32m    RewriteRule !^index.php index.php [L,NC][m
+[32m+[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## Block all PHP files, except index[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} -f[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} \.php$[m
+[32m+[m[32m    RewriteRule !^index.php index.php [L,NC][m
+[32m+[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    ## Standard routes[m
+[32m+[m[32m    ##[m
+[32m+[m[32m    RewriteCond %{REQUEST_FILENAME} !-f[m
+[32m+[m[32m    RewriteRule ^ index.php [L][m
+[32m+[m
+[32m+[m[32m</IfModule>[m
+[1mdiff --git a/artisan b/artisan[m
+[1mnew file mode 100644[m
+[1mindex 0000000..961e94d[m
+[1m--- /dev/null[m
+[1m+++ b/artisan[m
+[36m@@ -0,0 +1,51 @@[m
+[32m+[m[32m#!/usr/bin/env php[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Register The Auto Loader[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| Composer provides a convenient, automatically generated class loader[m
+[32m+[m[32m| for our application. We just need to utilize it! We'll require it[m
+[32m+[m[32m| into the script here so that we do not have to worry about the[m
+[32m+[m[32m| loading of any our classes "manually". Feels great to relax.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mrequire __DIR__.'/bootstrap/autoload.php';[m
+[32m+[m
+[32m+[m[32m$app = require_once __DIR__.'/bootstrap/app.php';[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Run The Artisan Application[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| When we run the console application, the current CLI command will be[m
+[32m+[m[32m| executed in this console and the response sent back to a terminal[m
+[32m+[m[32m| or another output device for the developers. Here goes nothing![m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$kernel = $app->make('Illuminate\Contracts\Console\Kernel');[m
+[32m+[m
+[32m+[m[32m$status = $kernel->handle([m
+[32m+[m[32m    $input = new Symfony\Component\Console\Input\ArgvInput,[m
+[32m+[m[32m    new Symfony\Component\Console\Output\ConsoleOutput[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Shutdown The Application[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| Once Artisan has finished running. We will fire off the shutdown events[m
+[32m+[m[32m| so that any final work may be done by the application before we shut[m
+[32m+[m[32m| down the process. This is the last thing to happen to the request.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$kernel->terminate($input, $status);[m
+[32m+[m
+[32m+[m[32mexit($status);[m
+\ No newline at end of file[m
+[1mdiff --git a/bootstrap/app.php b/bootstrap/app.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cc0ec8d[m
+[1m--- /dev/null[m
+[1m+++ b/bootstrap/app.php[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Create The Application[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| The first thing we will do is create a new Laravel application instance[m
+[32m+[m[32m| which serves as the "glue" for all the components of Laravel, and is[m
+[32m+[m[32m| the IoC container for the system binding all of the various parts.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$app = new October\Rain\Foundation\Application([m
+[32m+[m[32m    realpath(__DIR__.'/../')[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Bind Important Interfaces[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| Next, we need to bind some important interfaces into the container so[m
+[32m+[m[32m| we will be able to resolve them when needed. The kernels serve the[m
+[32m+[m[32m| incoming requests to this application from both the web and CLI.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$app->singleton([m
+[32m+[m[32m    Illuminate\Contracts\Http\Kernel::class,[m
+[32m+[m[32m    October\Rain\Foundation\Http\Kernel::class[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32m$app->singleton([m
+[32m+[m[32m    Illuminate\Contracts\Console\Kernel::class,[m
+[32m+[m[32m    October\Rain\Foundation\Console\Kernel::class[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32m$app->singleton([m
+[32m+[m[32m    Illuminate\Contracts\Debug\ExceptionHandler::class,[m
+[32m+[m[32m    October\Rain\Foundation\Exception\Handler::class[m
+[32m+[m[32m);[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Return The Application[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| This script returns the application instance. The instance is given to[m
+[32m+[m[32m| the calling script so we can separate the building of the instances[m
+[32m+[m[32m| from the actual running of the application and sending responses.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mreturn $app;[m
+[1mdiff --git a/bootstrap/autoload.php b/bootstrap/autoload.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b980622[m
+[1m--- /dev/null[m
+[1m+++ b/bootstrap/autoload.php[m
+[36m@@ -0,0 +1,54 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mdefine('LARAVEL_START', microtime(true));[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Register Core Helpers[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| We cannot rely on Composer's load order when calculating the weight of[m
+[32m+[m[32m| each package. This line ensures that the core global helpers are[m
+[32m+[m[32m| always given priority one status.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$helperPath = __DIR__.'/../vendor/october/rain/src/Support/helpers.php';[m
+[32m+[m
+[32m+[m[32mif (!file_exists($helperPath)) {[m
+[32m+[m[32m    echo 'Missing vendor files, try running "composer install" or use the Wizard installer.'.PHP_EOL;[m
+[32m+[m[32m    exit(1);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mrequire $helperPath;[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Register The Composer Auto Loader[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| Composer provides a convenient, automatically generated class loader[m
+[32m+[m[32m| for our application. We just need to utilize it! We'll require it[m
+[32m+[m[32m| into the script here so that we do not have to worry about the[m
+[32m+[m[32m| loading of any our classes "manually". Feels great to relax.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mrequire __DIR__.'/../vendor/autoload.php';[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m| Include The Compiled Class File[m
+[32m+[m[32m|--------------------------------------------------------------------------[m
+[32m+[m[32m|[m
+[32m+[m[32m| To dramatically increase your application's performance, you may use a[m
+[32m+[m[32m| compiled class file which contains all of the classes commonly used[m
+[32m+[m[32m| by a request. The Artisan "optimize" is used to create this file.[m
+[32m+[m[32m|[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32m$compiledPath = __DIR__.'/../storage/framework/compiled.php';[m
+[32m+[m
+[32m+[m[32mif (file_exists($compiledPath)) {[m
+[32m+[m[32m    require $compiledPath;[m
+[32m+[m[32m}[m
+[1mdiff --git a/config/app.php b/config/app.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..50cf8d2[m
+[1m--- /dev/null[m
+[1m+++ b/config/app.php[m
+[36m@@ -0,0 +1,150 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application Debug Mode[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | When your application is in debug mode, detailed error messages with[m
+[32m+[m[32m    | stack traces will be shown on every error that occurs within your[m
+[32m+[m[32m    | application. If disabled, a simple generic error page is shown.[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | You can create a CMS page with route "/error" to set the contents[m
+[32m+[m[32m    | of this page. Otherwise a default error page is shown.[m
+[32m+[m[32m    |[m
+[32m+[m[32m    */[m
+[32m+[m
+[32m+[m[32m    'debug' => env('APP_DEBUG', true),[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application Name[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | This value is the name of your application. This value is used when the[m
+[32m+[m[32m    | framework needs to place the application's name in a notification or[m
+[32m+[m[32m    | any other location as required by the application or its packages.[m
+[32m+[m[32m    */[m
+[32m+[m
+[32m+[m[32m    'name' => 'October CMS',[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application URL[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | This URL is used by the console to properly generate URLs when using[m
+[32m+[m[32m    | the Artisan command line tool. You should set this to the root of[m
+[32m+[m[32m    | your application so that it is used when running Artisan tasks.[m
+[32m+[m[32m    |[m
+[32m+[m[32m    */[m
+[32m+[m
+[32m+[m[32m    'url' => env('APP_URL', 'http://www.mon-ecole-tavannes.ch/'),[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application Timezone[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | Here you may specify the default timezone for your application, which[m
+[32m+[m[32m    | will be used by the PHP date and date-time functions. We have gone[m
+[32m+[m[32m    | ahead and set this to a sensible default for you out of the box.[m
+[32m+[m[32m    |[m
+[32m+[m[32m    */[m
+[32m+[m
+[32m+[m[32m    'timezone' => 'Europe/Zurich',[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application Locale Configuration[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    |[m
+[32m+[m[32m    | The application locale determines the default locale that will be used[m
+[32m+[m[32m    | by the translation service provider. You are free to set this value[m
+[32m+[m[32m    | to any of the locales which will be supported by the application.[m
+[32m+[m[32m    |[m
+[32m+[m[32m    */[m
+[32m+[m
+[32m+[m[32m    'locale' => 'fr',[m
+[32m+[m
+[32m+[m[32m    /*[m
+[32m+[m[32m    |--------------------------------------------------------------------------[m
+[32m+[m[32m    | Application Fallback Locale[m
+[32m+[m[32m    |---------------------------------------------

@@ -1,0 +1,26 @@
+columns:
+    first_name:
+        label: Prénom
+        type: text
+        searchable: true
+        sortable: true
+    last_name:
+        label: Nom
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: 'Adresse e-mail'
+        type: text
+        searchable: true
+        sortable: true
+    telephone_1:
+        label: Téléphone
+        type: text
+        searchable: true
+        sortable: true
+    prenom_nom:
+        label: 'Prénom et nom'
+        type: text
+        invisible: true
+        select: 'concat(first_name, '' '', last_name)'

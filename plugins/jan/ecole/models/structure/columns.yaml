@@ -1,0 +1,22 @@
+columns:
+    abreviation:
+        label: Abréviation
+        type: text
+        searchable: true
+        sortable: false
+        cssClass: gras
+        width: 20px
+    titre:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: false
+    description:
+        label: Description
+        type: text
+        searchable: true
+        sortable: false
+    is_actif:
+        label: Actif
+        type: switch
+        searchable: true

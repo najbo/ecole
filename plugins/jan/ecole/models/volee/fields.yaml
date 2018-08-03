@@ -1,0 +1,46 @@
+fields:
+    titre:
+        label: Volée
+        span: auto
+        cssClass: gras
+        required: 1
+        type: text
+        comment: 'Au format 2016-24'
+    designation:
+        label: Désignation
+        span: left
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        required: 0
+        preset:
+            field: designation
+            type: slug
+        type: text
+    debut:
+        label: 'Début de la volée'
+        mode: date
+        span: left
+        required: 1
+        type: datepicker
+        comment: 'Débute un 1er août'
+        format: d.m.Y
+    fin:
+        label: 'Date de fin'
+        span: auto
+        mode: date
+        type: datepicker
+        comment: 'Se termine un 31 juillet'
+        format: d.m.Y
+    description:
+        label: 'Description de la volée'
+        size: ''
+        span: full
+        type: richeditor
+    actif:
+        label: Actif
+        span: auto
+        default: 1
+        type: switch

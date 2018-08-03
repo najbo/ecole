@@ -1,0 +1,35 @@
+fields:
+    abreviation:
+        label: Abréviation
+        span: auto
+        cssClass: gras
+        type: text
+    titre:
+        label: Titre
+        span: auto
+        required: 1
+        type: text
+    description:
+        label: Description
+        span: full
+        type: textarea
+    logo:
+        label: 'Logo de la structure'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    is_actif:
+        label: Actif
+        span: left
+        default: 1
+        type: switch
+    sort_order:
+        label: Ordre
+        span: left
+        disabled: 1
+        hidden: 1
+        type: text

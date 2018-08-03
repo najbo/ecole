@@ -1,0 +1,28 @@
+fields:
+    first_name:
+        label: Prénom
+        span: left
+        type: text
+    last_name:
+        label: Nom
+        span: auto
+        type: text
+    description:
+        label: 'jan.ecole::lang.plugin.description'
+        size: ''
+        span: full
+        type: textarea
+    adresse:
+        label: Adresse
+        size: ''
+        span: left
+        type: textarea
+    telephone_1:
+        label: Téléphone
+        span: auto
+        type: text
+    tel_non_public:
+        label: 'Ne pas publier ces informations sur le front-end'
+        span: left
+        default: 1
+        type: switch

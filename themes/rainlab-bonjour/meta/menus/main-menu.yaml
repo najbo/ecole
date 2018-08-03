@@ -1,0 +1,78 @@
+name: 'Main Menu'
+items:
+    -
+        title: Home
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: home
+        reference: home
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Languages
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: languages
+        reference: languages
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Messages
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: messages
+        reference: messages
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Content
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: content
+        reference: content
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Présentation
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: presentation
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Video
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: video
+        reference: video
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

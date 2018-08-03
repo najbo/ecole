@@ -1,0 +1,28 @@
+columns:
+    abreviation:
+        label: Abréviation
+        type: text
+        searchable: true
+        sortable: true
+        cssClass: gras
+        width: 50px
+    titre:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: Slu
+        type: text
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'Date suppression'
+        type: date
+        sortable: true
+        format: 'd.m,Y'
+    is_actif:
+        label: Actif
+        type: switch
+        searchable: true
+        sortable: true

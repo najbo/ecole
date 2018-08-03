@@ -1,0 +1,11 @@
+name: Enseignants
+modelClass: Jan\Ecole\Models\Enseignant
+form: $/jan/ecole/models/enseignant/fields.yaml
+defaultRedirect: jan/ecole/enseignants
+create:
+    redirect: 'jan/ecole/enseignants/update/:id'
+    redirectClose: jan/ecole/enseignants
+update:
+    redirect: jan/ecole/enseignants
+    redirectClose: jan/ecole/enseignants
+preview: {  }

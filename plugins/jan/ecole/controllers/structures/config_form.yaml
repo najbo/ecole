@@ -1,0 +1,10 @@
+name: Structures
+modelClass: Jan\Ecole\Models\Structure
+form: $/jan/ecole/models/structure/fields.yaml
+defaultRedirect: jan/ecole/structures
+create:
+    redirect: 'jan/ecole/structures/update/:id'
+    redirectClose: jan/ecole/structures
+update:
+    redirect: jan/ecole/structures
+    redirectClose: jan/ecole/structures

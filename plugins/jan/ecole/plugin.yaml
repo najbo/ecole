@@ -1,0 +1,77 @@
+plugin:
+    name: Ecole
+    description: 'Un plugin pour gérer les classes sur le CMS'
+    author: Jan
+    icon: oc-icon-child
+    homepage: 'http://www.jan-boesch.net'
+permissions:
+    jan.ecole.gestion_annees:
+        tab: 'Gestion d''école'
+        label: 'Gère les années scolaires'
+    jan.ecole.gestion_volees:
+        tab: 'Gestion d''école'
+        label: 'Gère les volées'
+    jan.ecole.gestion_structures:
+        tab: 'Gestion d''école'
+        label: 'Gère les structures (primaires, secondaires)'
+    jan.ecole.gestion_degres:
+        tab: 'Gestion d''école'
+        label: 'Gère les degrés et les années y relatives'
+    jan.ecole.gestion_enseignants:
+        tab: 'Gestion d''école'
+        label: 'Gère les enseignants'
+    jan.ecole.gestion_tags:
+        tab: 'Gestion d''école'
+        label: 'Gère les tags des publications'
+    jan.ecole.gestion_typeinfo:
+        tab: 'Info Center'
+        label: 'Gère les types d''informations (news ou vie de classes)'
+    jan.ecole.gestion_informations:
+        tab: 'Info Center'
+        label: 'Gère les informations de l''école ou des classes'
+    jan.ecole.gestion_news:
+        tab: 'Info Center'
+        label: 'Gères les news de l''école ou des classes'
+navigation:
+    ecole:
+        label: 'Gestion d''école'
+        url: jan/ecole/annees
+        icon: icon-child
+        sideMenu:
+            structures:
+                label: 'Structures d''école'
+                url: jan/ecole/structures
+                icon: icon-sitemap
+            annees-scolaires:
+                label: 'Années scolaires'
+                url: jan/ecole/annees
+                icon: icon-calendar
+            volees:
+                label: Volées
+                url: jan/ecole/volees
+                icon: icon-trophy
+            classes:
+                label: Classes
+                url: jan/ecole/degres
+                icon: icon-cubes
+            tags:
+                label: Tags
+                url: jan/ecole/tags
+                icon: icon-tags
+            enseignants:
+                label: Enseignants
+                url: jan/ecole/enseignants
+                icon: icon-user
+    cockpit:
+        label: 'Infos Center'
+        url: jan/ecole/informations
+        icon: icon-newspaper-o
+        sideMenu:
+            informations:
+                label: Informations
+                url: jan/ecole/informations
+                icon: icon-pencil
+            type-infoc:
+                label: Type
+                url: jan/ecole/typesinfos
+                icon: icon-bullhorn

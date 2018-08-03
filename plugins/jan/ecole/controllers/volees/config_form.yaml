@@ -1,0 +1,14 @@
+name: Volée
+modelClass: Jan\Ecole\Models\Volee
+form: $/jan/ecole/models/volee/fields.yaml
+defaultRedirect: jan/ecole/volees
+create:
+    title: 'Ajouter une volée'
+    redirect: 'jan/ecole/volees/update/:id'
+    redirectClose: jan/ecole/volees
+update:
+    title: 'Edition d''une volée'
+    redirect: jan/ecole/volees
+    redirectClose: jan/ecole/volees
+preview:
+    title: 'Affichage d''une volée'

@@ -1,0 +1,14 @@
+name: 'Années scolaires'
+modelClass: Jan\Ecole\Models\Annee
+form: $/jan/ecole/models/annee/fields.yaml
+defaultRedirect: jan/ecole/annees
+create:
+    title: 'Ajouter une année scolaire'
+    redirect: 'jan/ecole/annees/update/:id'
+    redirectClose: jan/ecole/annees
+update:
+    title: 'Edition d''une année scolaire'
+    redirect: jan/ecole/annees
+    redirectClose: jan/ecole/annees
+preview:
+    title: 'Preview année scolaire'
