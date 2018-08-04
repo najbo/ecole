@@ -1,5 +1,5 @@
-list: $/jan/ecole/models/infocenter/columns.yaml
-modelClass: Jan\Ecole\Models\InfoCenter
+list: $/jan/ecole/models/publication/columns.yaml
+modelClass: Jan\Ecole\Models\Publication
 title: Informations
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true

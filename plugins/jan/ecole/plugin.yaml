@@ -23,15 +23,18 @@ permissions:
     jan.ecole.gestion_tags:
         tab: 'Gestion d''école'
         label: 'Gère les tags des publications'
-    jan.ecole.gestion_typeinfo:
-        tab: 'Info Center'
-        label: 'Gère les types d''informations (news ou vie de classes)'
+    jan.ecole.gestion_types_publications:
+        tab: Publications
+        label: 'Gère les types de publications (news ou vie de classes)'
     jan.ecole.gestion_informations:
-        tab: 'Info Center'
+        tab: Publications
         label: 'Gère les informations de l''école ou des classes'
     jan.ecole.gestion_news:
-        tab: 'Info Center'
-        label: 'Gères les news de l''école ou des classes'
+        tab: Publications
+        label: 'Gères les publications de l''école ou des classes'
+    jan.ecole.gestion_etendues:
+        tab: Publications
+        label: 'Gère les étendues des publications'
 navigation:
     ecole:
         label: 'Gestion d''école'
@@ -62,8 +65,8 @@ navigation:
                 label: Enseignants
                 url: jan/ecole/enseignants
                 icon: icon-user
-    cockpit:
-        label: 'Infos Center'
+    publications:
+        label: Publications
         url: jan/ecole/informations
         icon: icon-newspaper-o
         sideMenu:
@@ -71,7 +74,11 @@ navigation:
                 label: Informations
                 url: jan/ecole/informations
                 icon: icon-pencil
-            type-infoc:
+            types-publication:
                 label: Type
-                url: jan/ecole/typesinfos
+                url: jan/ecole/typespublication
                 icon: icon-bullhorn
+            etendue:
+                label: 'Etendue de publication'
+                url: jan/ecole/etendues
+                icon: icon-eye

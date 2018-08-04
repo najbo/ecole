@@ -360,4 +360,9 @@
   'jan\\ecole\\Controllers\\informations' => 'plugins\\jan\\ecole\\controllers\\informations.php',
   'Jan\\Ecole\\Models\\InfoCenter' => 'plugins\\jan\\ecole\\models\\InfoCenter.php',
   'cms\\Controllers\\themelogs' => 'modules\\cms\\controllers\\themelogs.php',
+  'Jan\\Ecole\\Models\\Publication' => 'plugins\\jan\\ecole\\models\\Publication.php',
+  'jan\\ecole\\Controllers\\etendues' => 'plugins\\jan\\ecole\\controllers\\etendues.php',
+  'Jan\\Ecole\\Models\\Etendue' => 'plugins\\jan\\ecole\\models\\Etendue.php',
+  'jan\\ecole\\Controllers\\typespublication' => 'plugins\\jan\\ecole\\controllers\\typespublication.php',
+  'Jan\\Ecole\\Models\\TypePublication' => 'plugins\\jan\\ecole\\models\\TypePublication.php',
 );

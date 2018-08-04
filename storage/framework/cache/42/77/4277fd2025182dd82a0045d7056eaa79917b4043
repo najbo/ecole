@@ -1,4 +1,4 @@
-1533282300a:1:{s:22:"presentation-ecole.htm";a:7:{s:8:"fileName";s:22:"presentation-ecole.htm";s:7:"content";s:273:"[viewBag]
+1533330518a:1:{s:22:"presentation-ecole.htm";a:7:{s:8:"fileName";s:22:"presentation-ecole.htm";s:7:"content";s:273:"[viewBag]
 title = "Ecole"
 url = "/presentation/ecole"
 layout = "content"
@@ -15,7 +15,7 @@ navigation_hidden = 0
 
 {% endput %}
 ==
-<p>Ceci est notre école</p>";s:5:"mtime";i:1533076621;s:6:"markup";s:28:"<p>Ceci est notre école</p>";s:4:"code";s:120:"{% put extraContent %}
+<p>Ceci est notre école</p>";s:5:"mtime";i:1533317392;s:6:"markup";s:28:"<p>Ceci est notre école</p>";s:4:"code";s:120:"{% put extraContent %}
 <p>Premier contenu</p>
 
 {% endput %}

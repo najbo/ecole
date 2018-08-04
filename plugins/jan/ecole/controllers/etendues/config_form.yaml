@@ -1,0 +1,11 @@
+name: Etendues
+modelClass: Jan\Ecole\Models\Etendue
+form: $/jan/ecole/models/etendue/fields.yaml
+defaultRedirect: jan/ecole/etendues
+create:
+    redirect: 'jan/ecole/etendues/update/:id'
+    redirectClose: jan/ecole/etendues
+update:
+    redirect: jan/ecole/etendues
+    redirectClose: jan/ecole/etendues
+preview: {  }

@@ -123,3 +123,30 @@
 1.0.42:
     - 'Updated table jan_ecole_volees'
     - builder_table_update_jan_ecole_volees8.php
+1.0.43:
+    - 'Updated table jan_ecole_infoscenter'
+    - builder_table_update_jan_ecole_infoscenter_2.php
+1.0.44:
+    - 'Created table jan_ecole_etendue'
+    - builder_table_create_jan_ecole_etendue.php
+1.0.45:
+    - 'Updated table jan_ecole_etendue'
+    - builder_table_update_jan_ecole_etendues.php
+1.0.46:
+    - 'Updated table jan_ecole_etendues'
+    - builder_table_update_jan_ecole_etendues_2.php
+1.0.47:
+    - 'Updated table jan_ecole_infoscenter'
+    - builder_table_update_jan_ecole_publications.php
+1.0.48:
+    - 'Updated table jan_ecole_etendues'
+    - builder_table_update_jan_ecole_etendues_3.php
+1.0.49:
+    - 'Updated table jan_ecole_typeinfo'
+    - builder_table_update_jan_ecole_type_publication.php
+1.0.50:
+    - 'Updated table jan_ecole_publications'
+    - builder_table_update_jan_ecole_publications_2.php
+1.0.51:
+    - 'Updated table jan_ecole_publications'
+    - builder_table_update_jan_ecole_publications3.php

@@ -23,6 +23,9 @@ class Tag extends Model
      * @var array Validation rules
      */
     public $rules = [
+        'tag_titre' => 'required',
+        'tag_short' => 'required',
+        'slug' => 'required',
     ];
 
     /**

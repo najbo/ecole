@@ -17,6 +17,6 @@ class Informations extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Jan.Ecole', 'cockpit', 'informations');
+        BackendMenu::setContext('Jan.Ecole', 'publications', 'informations');
     }
 }

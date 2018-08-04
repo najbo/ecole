@@ -1,0 +1,10 @@
+fields:
+    titre:
+        label: Titre
+        span: auto
+        type: text
+    is_actif:
+        label: Actif
+        span: left
+        default: 1
+        type: switch

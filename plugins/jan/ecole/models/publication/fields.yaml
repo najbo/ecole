@@ -1,0 +1,103 @@
+fields:
+    titre:
+        label: Titre
+        span: auto
+        required: 1
+        type: text
+    typepublication:
+        label: Type
+        nameFrom: titre
+        descriptionFrom: description
+        span: auto
+        type: relation
+    user:
+        label: Auteur
+        nameFrom: first_name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    date_event:
+        label: 'Date de survenance'
+        mode: datetime
+        span: auto
+        type: datepicker
+    etendue_id:
+        label: Etendue
+        span: left
+        type: radio
+    degre:
+        label: Classe
+        nameFrom: degre
+        descriptionFrom: description
+        span: auto
+        type: relation
+    accroche:
+        label: Accroche
+        size: small
+        span: full
+        type: richeditor
+    corps:
+        label: Corps
+        size: large
+        span: full
+        type: richeditor
+    date_debut:
+        label: 'Publié depuis'
+        mode: date
+        span: auto
+        type: datepicker
+    date_fin:
+        label: 'Publié jusqu''à'
+        mode: date
+        span: auto
+        type: datepicker
+    structure:
+        label: Structure
+        nameFrom: titre
+        descriptionFrom: description
+        span: auto
+        type: relation
+    banner:
+        label: 'Image d''entete'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    galerie:
+        label: 'Galerie d''images'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    documents:
+        label: Documents
+        mode: file
+        fileTypes: 'pdf,doc,docx'
+        prompt: 'Cliquez pour sélectionner vos fichiers'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload
+    degre_id:
+        label: 'Record finder'
+        nameFrom: degre
+        descriptionFrom: description
+        list: $/jan/ecole/models/degre/columns.yaml
+        span: auto
+        type: recordfinder
+    # user_id:
+    #     label: User
+    #     list: $/rainlab/user/models/user/columns.yaml
+    #     prompt: 'Click the %s button to find a user'
+    #     nameFrom: first_name
+    #     descriptionFrom: email
+    #     span: full
+    #     type: recordfinder

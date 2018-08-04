@@ -1,4 +1,4 @@
-1533282300a:1:{s:13:"languages.htm";a:9:{s:8:"fileName";s:13:"languages.htm";s:7:"content";s:1218:"title = "Languages"
+1533330518a:1:{s:13:"languages.htm";a:9:{s:8:"fileName";s:13:"languages.htm";s:7:"content";s:1258:"title = "Languages"
 meta_title = "title.languages"
 url = "/languages"
 layout = "default"
@@ -38,7 +38,7 @@ layout = "default"
             {% content 'locale-setup.htm' %}
         </div>
     </div>
-{% endput %}";s:5:"mtime";i:1533028309;s:6:"markup";s:1126:"<div class="container">
+{% endput %}";s:5:"mtime";i:1533317392;s:6:"markup";s:1161:"<div class="container">
 
     <div class="title-area">
         <h3>{{ this.page.meta_title|_ }}</h3>
