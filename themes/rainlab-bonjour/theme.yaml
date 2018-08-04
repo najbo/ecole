@@ -8,13 +8,13 @@ require:
     - RainLab.Translate
 
 translate:
-    fr:
+    en:
         site.name: 'Bonjour'
-        nav.home: 'Accueil'
-        nav.languages: 'Langues'
+        nav.home: 'Home'
+        nav.languages: 'Languages'
         nav.messages: 'Messages'
         nav.content: 'Content'
         nav.video: 'Video'
-        title.languages: 'Langues disponibles'
+        title.languages: 'Available Languages'
         title.messages: 'Translated Messages'
         title.video: 'Screencast Video'

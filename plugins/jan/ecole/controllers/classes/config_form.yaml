@@ -1,0 +1,13 @@
+name: Classe
+modelClass: Jan\Ecole\Models\Classe
+form: $/jan/ecole/models/classe/fields.yaml
+defaultRedirect: jan/ecole/classes
+create:
+    title: 'Nouvelle classe'
+    redirect: 'jan/ecole/classes/update/:id'
+    redirectClose: jan/ecole/classes
+update:
+    title: 'Editer une classe'
+    redirect: jan/ecole/classes
+    redirectClose: jan/ecole/classes
+preview: {  }

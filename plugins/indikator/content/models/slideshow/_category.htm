@@ -1,0 +1,5 @@
+<?php
+
+if ($record->category > 0) {
+    echo Db::table('indikator_content_slideshow_categories')->whereId($record->category)->value('name');
+}

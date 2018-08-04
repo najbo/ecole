@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.categories
+form: ~/plugins/indikator/content/models/newscategories/fields.yaml
+
+modelClass: Indikator\Content\Models\NewsCategories
+defaultRedirect: indikator/content/newscategories
+
+create:
+    redirect: indikator/content/newscategories/update/:id
+    redirectClose: indikator/content/newscategories
+
+update:
+    redirect: indikator/content/newscategories/update/:id
+    redirectClose: indikator/content/newscategories

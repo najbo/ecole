@@ -1,18 +1,7 @@
 title = "Messages"
+meta_title = "title.messages"
 url = "/messages"
 layout = "default"
-meta_title = "title.messages"
-is_hidden = 0
-
-[builderList]
-modelClass = "Jan\Ecole\Models\Volee"
-scope = "-"
-scopeValue = "{{ :scope }}"
-displayColumn = "titre"
-noRecordsMessage = "No records found"
-detailsPage = "-"
-detailsUrlParameter = "id"
-pageNumber = "{{ :page }}"
 ==
 <?php
 function onStart()
@@ -22,10 +11,6 @@ function onStart()
 ?>
 ==
 <div class="container">
-
-<h1>Volées</h1>
-
-{% component 'builderList' %}
 
     <div class="title-area">
         <h3>{{ this.page.meta_title|_ }}</h3>

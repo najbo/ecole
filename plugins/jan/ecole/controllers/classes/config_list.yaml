@@ -1,0 +1,16 @@
+title: Classes
+modelClass: Jan\Ecole\Models\Classe
+list: $/jan/ecole/models/classe/columns.yaml
+recordUrl: 'jan/ecole/classes/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: classe
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+filter: config_filter.yaml

@@ -1,0 +1,80 @@
+{% set post = __SELF__.post %}
+
+<div class="news-image">
+{% if post.image %}
+    <div class="big-image">
+        <img src="{{ post.image|media }}" alt="{{ post.title }}">
+    </div>
+{% endif %}
+{% if post.images %}
+    <div class="small-images">
+    {% for item in post.images %}
+        <a href="{{ item.img_path|media }}"><img src="{{ item.img_path|media }}" alt="{{ item.img_name }}"></a>
+    {% endfor %}
+    </div>
+{% endif %}
+</div>
+
+<div class="news-title">
+    <h1>{{ post.title }}</h1>
+</div>
+
+<div class="news-info">
+    Posted on {{ post.published_at|date('Y-m-d G:i') }}
+    {% if post.categories.count %}
+        | Category:
+        {% for category in post.categories %}
+        <a href="{{ category.slug }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if post.tags.count %}
+        | Tags:
+        {% for tag in post.tags %}
+        <a href="{{ tag.slug }}">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
+
+<div class="news-content">
+    {{ post.content|raw }}
+</div>
+
+{% if post.files.count %}
+<div class="news-files">
+    Downloadable files:<br>
+    {% for item in post.files %}
+        <a href="{{ item.file_path|media }}">{{ item.file_name }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_blog.count %}
+<div class="related-posts">
+    Related posts:<br>
+    {% for item in related_blog %}
+        <a href="{{ 'blog'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_news.count %}
+<div class="related-news">
+    Related news:<br>
+    {% for item in related_news %}
+        <a href="{{ 'news'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_portfolio.count %}
+<div class="related-portfolio">
+    Related portfolio:<br>
+    {% for item in related_portfolio %}
+        <a href="{{ 'portfolio'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+<div class="return">
+    <a href="{{ 'news'|page }}">Return to the News</a>
+</div>

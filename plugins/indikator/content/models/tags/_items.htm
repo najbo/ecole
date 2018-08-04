@@ -1,0 +1,17 @@
+<?php
+
+$count = 0;
+
+if (Schema::hasTable('indikator_content_blog')) {
+    $count += Db::table('indikator_content_tags_blog')->where('tags_id', $record->id)->count();
+}
+
+if (Schema::hasTable('indikator_content_news')) {
+    $count += Db::table('indikator_content_tags_news')->where('tags_id', $record->id)->count();
+}
+
+if (Schema::hasTable('indikator_content_portfolio')) {
+    $count += Db::table('indikator_content_tags_portfolio')->where('tags_id', $record->id)->count();
+}
+
+echo $count;

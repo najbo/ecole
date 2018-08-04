@@ -1,0 +1,5 @@
+<?php
+
+if ($record->style > 0) {
+    echo Db::table('indikator_content_slideshow_style')->whereId($record->style)->value('title');
+}

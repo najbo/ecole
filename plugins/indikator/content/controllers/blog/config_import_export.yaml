@@ -1,0 +1,18 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: indikator.content::lang.menu.import
+    modelClass: Indikator\Content\Models\BlogImport
+    list: $/indikator/content/models/blogimport/columns.yaml
+    redirect: indikator/content/blog
+    permissions: indikator.content.import_export
+
+export:
+    title: indikator.content::lang.menu.export
+    modelClass: Indikator\Content\Models\BlogExport
+    list: $/indikator/content/models/blogexport/columns.yaml
+    redirect: indikator/content/blog
+    permissions: indikator.content.import_export
+    filename: blog.csv

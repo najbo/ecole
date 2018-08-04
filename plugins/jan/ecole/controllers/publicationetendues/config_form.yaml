@@ -1,0 +1,10 @@
+name: Etendues
+modelClass: Jan\Ecole\Models\PublicationEtendue
+form: $/jan/ecole/models/publicationetendue/fields.yaml
+defaultRedirect: jan/ecole/publicationetendues
+create:
+    redirect: 'jan/ecole/publicationetendues/update/:id'
+    redirectClose: jan/ecole/publicationetendues
+update:
+    redirect: jan/ecole/publicationetendues
+    redirectClose: jan/ecole/publicationetendues

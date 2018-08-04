@@ -1,0 +1,118 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: indikator.content::lang.form.title
+        required: true
+        span: auto
+
+    subtitle:
+        label: indikator.content::lang.form.subtitle
+        span: auto
+
+    button:
+        label: indikator.content::lang.form.button
+        span: auto
+
+    style:
+        label: indikator.content::lang.form.style
+        type: dropdown
+        span: auto
+
+    type:
+        label: indikator.content::lang.form.type
+        type: dropdown
+        default: 0
+        span: auto
+
+    type_page:
+        label: indikator.content::lang.form.type_page
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: value[1]
+        span: right
+
+    type_blog:
+        label: indikator.content::lang.form.type_blog
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: value[2]
+        span: right
+
+    type_news:
+        label: indikator.content::lang.form.type_news
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: value[3]
+        span: right
+
+    type_portfolio:
+        label: indikator.content::lang.form.type_portfolio
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: value[4]
+        span: right
+
+    type_external:
+        label: indikator.content::lang.form.type_external
+        default: 'http://www.'
+        trigger:
+            action: show
+            field: type
+            condition: value[5]
+        span: right
+
+    type_rainlab_blog:
+        label: indikator.content::lang.form.type_rainlab_blog
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: value[6]
+        span: right
+
+    content:
+        label: indikator.content::lang.form.content
+        type: richeditor
+        size: large
+
+secondaryTabs:
+    fields:
+
+        image:
+            label: indikator.content::lang.form.image
+            type: mediafinder
+            mode: image
+
+        category:
+            label: indikator.content::lang.form.category
+            type: dropdown
+            default: 0
+
+        status:
+            label: indikator.content::lang.form.status
+            required: true
+            type: radio
+            options:
+                1: indikator.content::lang.form.status_active
+                2: indikator.content::lang.form.status_inactive
+            default: 1
+            span: auto
+
+        sort_order:
+            label: indikator.content::lang.list.order
+            required: true
+            type: number
+            default: 1
+            span: auto

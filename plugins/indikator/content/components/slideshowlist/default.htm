@@ -1,0 +1,18 @@
+{% set posts = __SELF__.posts %}
+
+<div class="slideshow">
+    <ul>
+    {% for post in posts %}
+        <li>
+            <a href="{{ post.slug }}">
+                {% if post.image %}<img src="{{ post.image|media }}" alt="{{ post.title }}">{% endif %}
+                <h3>{{ post.title }}</h3>
+                {% if post.subtitle %}<h4>{{ post.subtitle }}</h4>{% endif %}
+                <div class="slide-content">
+                    {{ post.content|raw }}
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

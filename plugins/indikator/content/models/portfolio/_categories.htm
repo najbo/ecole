@@ -1,0 +1,11 @@
+<?php
+
+$sql = Db::table('indikator_content_portfolio_relations')->where('portfolio_id', $record->id)->get()->all();
+
+foreach ($sql as $item) {
+    $result[] = Db::table('indikator_content_portfolio_categories')->whereId($item->portfolio_categories_id)->value('name');
+}
+
+if (isset($result)) {
+    echo implode(', ', $result);
+}

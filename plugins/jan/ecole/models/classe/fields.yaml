@@ -1,0 +1,53 @@
+tabs:
+    fields:
+        degre:
+            label: Degré
+            span: auto
+            required: 1
+            cssClass: gras
+            type: text
+            tab: Attributions
+        structure:
+            label: Structure
+            nameFrom: titre
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: Attributions
+        annee:
+            label: 'Année scolaire'
+            nameFrom: titre
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: Attributions
+        volee:
+            label: Volée
+            nameFrom: titre
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: Attributions
+        section_1:
+            label: 'Enseignant liés'
+            span: full
+            type: section
+            tab: Attributions
+        enseignants:
+            span: left
+            cssClass: ''
+            path: $/jan/ecole/controllers/classes/_field_enseignants.htm
+            type: partial
+            tab: Attributions
+        is_actif:
+            label: Actif
+            span: left
+            default: 1
+            type: switch
+            tab: Attributions
+        description:
+            label: Description
+            size: ''
+            span: full
+            type: richeditor
+            tab: Description

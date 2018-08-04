@@ -1,0 +1,13 @@
+<?php
+
+$type = [
+    0 => 'none',
+    1 => 'page',
+    2 => 'blog',
+    3 => 'news',
+    4 => 'portfolio',
+    5 => 'external',
+    6 => 'rainlab_blog'
+];
+
+echo Lang::get('indikator.content::lang.form.type_'.$type[$record->type]);

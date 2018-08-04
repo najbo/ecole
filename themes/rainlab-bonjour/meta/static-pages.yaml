@@ -4,6 +4,3 @@ static-pages:
         content-content: {  }
         content-models: {  }
         content-urls: {  }
-    presentation:
-        presentation-ecole: {  }
-        presentation-enseignants: {  }

@@ -1,0 +1,11 @@
+name: TypesInfos
+modelClass: Jan\Ecole\Models\PublicationType
+form: $/jan/ecole/models/publicationtype/fields.yaml
+defaultRedirect: jan/ecole/publicationtype
+create:
+    redirect: 'jan/ecole/publicationtypes/update/:id'
+    redirectClose: jan/ecole/publicationtypes
+update:
+    redirect: jan/ecole/publicationtypes
+    redirectClose: jan/ecole/publicationtypes
+preview: {  }

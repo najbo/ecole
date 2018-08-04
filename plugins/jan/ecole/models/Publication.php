@@ -24,7 +24,7 @@ class Publication extends Model
     public $table = 'jan_ecole_publications';
 
     public function getEtendueIdOptions($value, $formData) {
-        $options = Etendue::lists('titre','id');
+        $options = PublicationEtendue::lists('titre','id');
         #dump($options);
         #die();
         return $options;
@@ -34,17 +34,18 @@ class Publication extends Model
 
     public $belongsTo = [
         'user' => 'Backend\Models\User',
-        'typepublication' => 'Jan\Ecole\Models\TypePublication',
+        'publicationtype' => 'Jan\Ecole\Models\PublicationType',
         'structure' => 'Jan\Ecole\Models\Structure',
-        'degre' => 'Jan\Ecole\Models\Degre'
+        'classe' => 'Jan\Ecole\Models\Classe'
+
     ];
 
-    public $hasManyThrough = [
+/*    public $hasManyThrough = [
         'volees' => [
             'Jan\Ecole\Models\Volee',
             'through' => 'Jan\Ecole\Models\Degre'
         ],
-    ];
+    ];*/
 
 
     /* Médias */

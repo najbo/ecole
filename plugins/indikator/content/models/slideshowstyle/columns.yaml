@@ -1,0 +1,34 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: indikator.content::lang.form.id
+        invisible: true
+
+    title:
+        label: indikator.content::lang.form.title
+        searchable: true
+
+    common:
+        label: indikator.content::lang.form.common
+        searchable: true
+
+    stat_item:
+        label: indikator.content::lang.form.slider
+        searchable: true
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshowstyle/_items.htm
+
+    created_at:
+        label: indikator.content::lang.list.created_at
+        searchable: true
+        type: datetime
+
+    updated_at:
+        label: indikator.content::lang.list.updated_at
+        searchable: true
+        invisible: true
+        type: datetime

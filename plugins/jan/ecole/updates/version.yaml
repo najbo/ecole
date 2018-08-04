@@ -150,3 +150,33 @@
 1.0.51:
     - 'Updated table jan_ecole_publications'
     - builder_table_update_jan_ecole_publications3.php
+1.0.52:
+    - 'Updated table jan_ecole_types_publication'
+    - builder_table_update_jan_ecole_publications_types.php
+1.0.53:
+    - 'Updated table jan_ecole_degres'
+    - builder_table_update_jan_ecole_classes.php
+1.0.54:
+    - 'Updated table jan_ecole_degres_users'
+    - builder_table_update_jan_ecole_degres_users_3.php
+1.0.55:
+    - 'Updated table jan_ecole_degres_users'
+    - builder_table_update_jan_ecole_classes_users.php
+1.0.56:
+    - 'Updated table jan_ecole_classes'
+    - builder_table_update_jan_ecole_classes_2.php
+1.0.57:
+    - 'Updated table jan_ecole_publications'
+    - builder_table_update_jan_ecole_publications_3.php
+1.0.58:
+    - 'Updated table jan_ecole_publications'
+    - builder_table_update_jan_ecole_publications_4.php
+1.0.59:
+    - 'Updated table jan_ecole_publications_types'
+    - builder_table_update_jan_ecole_publications_types_2.php
+1.0.60:
+    - 'Seed table jan_ecole_publications_types'
+    - seeder1060.php
+1.0.61:
+    - 'Updated table jan_ecole_etendues'
+    - builder_table_update_jan_ecole_publications_etendues.php

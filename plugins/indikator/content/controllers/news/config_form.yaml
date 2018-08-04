@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.news
+form: ~/plugins/indikator/content/models/news/fields.yaml
+
+modelClass: Indikator\Content\Models\News
+defaultRedirect: indikator/content/news
+
+create:
+    redirect: indikator/content/news/update/:id
+    redirectClose: indikator/content/news
+
+update:
+    redirect: indikator/content/news/update/:id
+    redirectClose: indikator/content/news

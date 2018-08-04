@@ -14,7 +14,7 @@ permissions:
     jan.ecole.gestion_structures:
         tab: 'Gestion d''école'
         label: 'Gère les structures (primaires, secondaires)'
-    jan.ecole.gestion_degres:
+    jan.ecole.gestion_classes:
         tab: 'Gestion d''école'
         label: 'Gère les degrés et les années y relatives'
     jan.ecole.gestion_enseignants:
@@ -23,7 +23,7 @@ permissions:
     jan.ecole.gestion_tags:
         tab: 'Gestion d''école'
         label: 'Gère les tags des publications'
-    jan.ecole.gestion_types_publications:
+    jan.ecole.gestion_publication_types:
         tab: Publications
         label: 'Gère les types de publications (news ou vie de classes)'
     jan.ecole.gestion_informations:
@@ -32,7 +32,7 @@ permissions:
     jan.ecole.gestion_news:
         tab: Publications
         label: 'Gères les publications de l''école ou des classes'
-    jan.ecole.gestion_etendues:
+    jan.ecole.gestion_publication_etendues:
         tab: Publications
         label: 'Gère les étendues des publications'
 navigation:
@@ -45,7 +45,7 @@ navigation:
                 label: 'Structures d''école'
                 url: jan/ecole/structures
                 icon: icon-sitemap
-            annees-scolaires:
+            anneesscolaires:
                 label: 'Années scolaires'
                 url: jan/ecole/annees
                 icon: icon-calendar
@@ -55,12 +55,8 @@ navigation:
                 icon: icon-trophy
             classes:
                 label: Classes
-                url: jan/ecole/degres
+                url: jan/ecole/classes
                 icon: icon-cubes
-            tags:
-                label: Tags
-                url: jan/ecole/tags
-                icon: icon-tags
             enseignants:
                 label: Enseignants
                 url: jan/ecole/enseignants
@@ -74,11 +70,15 @@ navigation:
                 label: Informations
                 url: jan/ecole/informations
                 icon: icon-pencil
-            types-publication:
+            tags:
+                label: Tags
+                url: jan/ecole/tags
+                icon: icon-tags
+            publicationtypes:
                 label: Type
-                url: jan/ecole/typespublication
+                url: jan/ecole/publicationtypes
                 icon: icon-bullhorn
-            etendue:
+            publicationetendues:
                 label: 'Etendue de publication'
-                url: jan/ecole/etendues
+                url: jan/ecole/publicationetendues
                 icon: icon-eye

@@ -1,0 +1,76 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: indikator.content::lang.form.title
+        span: auto
+
+    rating:
+        label: indikator.content::lang.form.rating
+        required: true
+        type: dropdown
+        options:
+            5: indikator.content::lang.form.rating_5
+            4: indikator.content::lang.form.rating_4
+            3: indikator.content::lang.form.rating_3
+            2: indikator.content::lang.form.rating_2
+            1: indikator.content::lang.form.rating_1
+        span: auto
+
+    company:
+        label: indikator.content::lang.form.company
+        span: auto
+
+    webpage:
+        label: indikator.content::lang.form.webpage
+        span: auto
+
+    content:
+        label: indikator.content::lang.form.content
+        required: true
+        type: richeditor
+        size: large
+
+secondaryTabs:
+    fields:
+
+        image:
+            label: indikator.content::lang.form.profile_image
+            type: mediafinder
+            mode: image
+
+        name:
+            label: indikator.content::lang.form.name
+            required: true
+
+        position:
+            label: indikator.content::lang.form.position
+
+        published_at:
+            label: indikator.content::lang.form.published_at
+            type: datepicker
+            mode: datetime
+            comment: indikator.content::lang.form.published_at_comment
+
+        status:
+            label: indikator.content::lang.form.status
+            required: true
+            type: radio
+            options:
+                1: indikator.content::lang.form.status_active
+                2: indikator.content::lang.form.status_inactive
+            default: 1
+            span: auto
+
+        featured:
+            label: indikator.content::lang.form.featured
+            required: true
+            type: radio
+            options:
+                1: indikator.content::lang.form.yes
+                2: indikator.content::lang.form.no
+            default: 2
+            span: auto

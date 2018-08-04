@@ -1,0 +1,12 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+title: indikator.content::lang.button.reorder
+
+nameFrom: name
+
+modelClass: Indikator\Content\Models\NewsCategories
+
+toolbar:
+    buttons: reorder_toolbar

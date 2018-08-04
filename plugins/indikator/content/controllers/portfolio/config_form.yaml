@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.portfolio
+form: ~/plugins/indikator/content/models/portfolio/fields.yaml
+
+modelClass: Indikator\Content\Models\Portfolio
+defaultRedirect: indikator/content/portfolio
+
+create:
+    redirect: indikator/content/portfolio/update/:id
+    redirectClose: indikator/content/portfolio
+
+update:
+    redirect: indikator/content/portfolio/update/:id
+    redirectClose: indikator/content/portfolio

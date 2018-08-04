@@ -1,0 +1,84 @@
+{% set post = __SELF__.post %}
+
+<div class="portfolio-info">
+	<h1>{{ post.title }}</h1>
+    {% if post.client %}<span class="portfolio-client">{{ post.client }}</span>{% endif %}
+    {% if post.webpage %}<span class="portfolio-webpage"><a href="{{ post.webpage }}" target="_blank">{{ post.webpage }}</a></span>{% endif %}
+</div>
+
+<div class="portfolio-image">
+{% if post.image %}
+    <div class="big-image">
+        <img src="{{ post.image|media }}" alt="{{ post.title }}">
+    </div>
+{% endif %}
+{% if post.images %}
+    <div class="small-images">
+    {% for item in post.images %}
+        <a href="{{ item.img_path|media }}"><img src="{{ item.img_path|media }}" alt="{{ item.img_name }}"></a>
+    {% endfor %}
+    </div>
+{% endif %}
+</div>
+
+<div class="portfolio-content">
+    {{ post.content|raw }}
+</div>
+
+{% if post.files.count %}
+<div class="portfolio-files">
+    Downloadable files:<br>
+    {% for item in post.files %}
+        <a href="{{ item.file_path|media }}">{{ item.file_name }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if post.categories.count %}
+<div class="portfolio-categories">
+    Category:
+    {% for category in post.categories %}
+        <a href="{{ category.slug }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if post.tags.count %}
+<div class="portfolio-tags">
+    Tags:
+    {% for tag in post.tags %}
+        <a href="{{ tag.slug }}">{{ tag.name }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_blog.count %}
+<div class="related-posts">
+    Related posts:<br>
+    {% for item in related_blog %}
+        <a href="{{ 'blog'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_news.count %}
+<div class="related-news">
+    Related news:<br>
+    {% for item in related_news %}
+        <a href="{{ 'news'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+{% if related_portfolio.count %}
+<div class="related-portfolio">
+    Related portfolio:<br>
+    {% for item in related_portfolio %}
+        <a href="{{ 'portfolio'|page }}/{{ item.slug }}">{{ item.title }}</a>{% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</div><br>
+{% endif %}
+
+<div class="return">
+    <a href="javascript:window.history.back();">Return to the Portfolio</a>
+</div>

@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.testimonials
+form: ~/plugins/indikator/content/models/testimonials/fields.yaml
+
+modelClass: Indikator\Content\Models\Testimonials
+defaultRedirect: indikator/content/testimonials
+
+create:
+    redirect: indikator/content/testimonials/update/:id
+    redirectClose: indikator/content/testimonials
+
+update:
+    redirect: indikator/content/testimonials/update/:id
+    redirectClose: indikator/content/testimonials

@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.categories
+form: ~/plugins/indikator/content/models/portfoliocategories/fields.yaml
+
+modelClass: Indikator\Content\Models\PortfolioCategories
+defaultRedirect: indikator/content/portfoliocategories
+
+create:
+    redirect: indikator/content/portfoliocategories/update/:id
+    redirectClose: indikator/content/portfoliocategories
+
+update:
+    redirect: indikator/content/portfoliocategories/update/:id
+    redirectClose: indikator/content/portfoliocategories

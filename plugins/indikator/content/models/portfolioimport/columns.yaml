@@ -1,0 +1,24 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id: indikator.content::lang.form.id
+    title: indikator.content::lang.form.title
+    slug: indikator.content::lang.form.slug
+    client: indikator.content::lang.form.client
+    webpage: indikator.content::lang.form.webpage
+    summary: indikator.content::lang.form.summary
+    content: indikator.content::lang.form.content
+    image: indikator.content::lang.form.featured_image
+    meta_title: indikator.content::lang.form.meta_title
+    meta_keywords: indikator.content::lang.form.meta_keywords
+    meta_desc: indikator.content::lang.form.meta_desc
+    stat_view: indikator.content::lang.list.stat_view
+    stat_date: indikator.content::lang.list.stat_date
+    status: indikator.content::lang.form.status
+    featured: indikator.content::lang.form.featured
+    published_at: indikator.content::lang.form.published_at
+    created_at: indikator.content::lang.list.created_at
+    updated_at: indikator.content::lang.list.updated_at

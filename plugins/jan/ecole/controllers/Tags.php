@@ -17,6 +17,6 @@ class Tags extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Jan.Ecole', 'ecole', 'tags');
+        BackendMenu::setContext('Jan.Ecole', 'publications', 'tags');
     }
 }

@@ -1,0 +1,11 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('indikator/content/slideshow') ?>"><?= e(trans('indikator.content::lang.menu.slideshow')) ?></a></li>
+        <li><?= e(trans($this->pageTitle)) ?></li>
+        <li>
+            <span class="text-info"><strong><?= Indikator\Content\Models\SlideshowCategories::count() ?></strong> <?= e(trans('indikator.content::lang.form.status_active')) ?></span>
+        </li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?= $this->listRender() ?>

@@ -1,0 +1,49 @@
+<div class="report-widget">
+    <h3><?= e(trans($this->property('title'))) ?></h3>
+
+    <?php if (!isset($error)): ?>
+    <div class="control-status-list">
+        <ul>
+            <?php if ($this->property('show_blog')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.blog')) ?></span>
+                <span class="status-label primary"><?= $blog ?></span>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->property('show_news')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.news')) ?></span>
+                <span class="status-label primary"><?= $news ?></span>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->property('show_portfolio')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.portfolio')) ?></span>
+                <span class="status-label primary"><?= $portfolio ?></span>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->property('show_slideshow')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.slideshow')) ?></span>
+                <span class="status-label primary"><?= $slideshow ?></span>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->property('show_testimonials')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.testimonials')) ?></span>
+                <span class="status-label primary"><?= $testimonials ?></span>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->property('show_tags')): ?>
+            <li>
+                <span class="status-text"><?= e(trans('indikator.content::lang.menu.tags')) ?></span>
+                <span class="status-label primary"><?= $tags ?></span>
+            </li>
+            <?php endif; ?>
+        </ul>
+    </div>
+
+    <?php else: ?>
+    <p class="flash-message static warning"><?= e($error) ?></p>
+    <?php endif ?>
+</div>

@@ -1,0 +1,75 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: indikator.content::lang.form.id
+        invisible: true
+
+    image:
+        label: indikator.content::lang.form.image
+        sortable: false
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshow/_image.htm
+
+    title:
+        label: indikator.content::lang.form.title
+        searchable: true
+
+    subtitle:
+        label: indikator.content::lang.form.subtitle
+        searchable: true
+        invisible: true
+
+    type:
+        label: indikator.content::lang.form.type
+        searchable: true
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshow/_type.htm
+
+    slug:
+        label: indikator.content::lang.form.slug
+        searchable: true
+
+    category:
+        label: indikator.content::lang.form.category
+        sortable: false
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshow/_category.htm
+
+    style:
+        label: indikator.content::lang.form.style
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshow/_style.htm
+
+    content:
+        label: indikator.content::lang.form.content
+        searchable: true
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/slideshow/_content.htm
+
+    sort_order:
+        label: indikator.content::lang.list.order
+
+    status:
+        label: indikator.content::lang.form.status
+        sortable: false
+        type: status
+
+    created_at:
+        label: indikator.content::lang.list.created_at
+        searchable: true
+        invisible: true
+        type: datetime
+
+    updated_at:
+        label: indikator.content::lang.list.updated_at
+        searchable: true
+        invisible: true
+        type: datetime

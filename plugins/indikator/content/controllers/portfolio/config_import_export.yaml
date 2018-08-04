@@ -1,0 +1,18 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: indikator.content::lang.menu.import
+    modelClass: Indikator\Content\Models\PortfolioImport
+    list: $/indikator/content/models/portfolioimport/columns.yaml
+    redirect: indikator/content/portfolio
+    permissions: indikator.content.import_export
+
+export:
+    title: indikator.content::lang.menu.export
+    modelClass: Indikator\Content\Models\PortfolioExport
+    list: $/indikator/content/models/portfolioexport/columns.yaml
+    redirect: indikator/content/portfolio
+    permissions: indikator.content.import_export
+    filename: portfolio.csv

@@ -53,25 +53,10 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Présentation
-        nesting: '1'
-        type: static-page
-        code: ''
-        reference: presentation
-        replace: '0'
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
         title: Video
-        nesting: ''
         type: cms-page
-        url: ''
         code: video
         reference: video
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

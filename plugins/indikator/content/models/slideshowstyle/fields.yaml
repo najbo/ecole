@@ -1,0 +1,104 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: indikator.content::lang.form.title
+        required: true
+        span: auto
+
+    common:
+        label: indikator.content::lang.form.common
+        span: auto
+
+tabs:
+    fields:
+
+        title_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.title_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        subtitle_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.subtitle_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        text_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.text_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        bg_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.bg_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        btn_bg_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.btn_bg_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        btn_text_color:
+            tab: indikator.content::lang.form.color
+            label: indikator.content::lang.form.btn_text_color
+            type: colorpicker
+            availableColors: [#fff, #7f8c8d, #34495e, #27ae60, #3498db, #9b59b6, #f1c40f, #c0392b]
+            span: auto
+
+        unique:
+            tab: indikator.content::lang.form.unique
+            label: indikator.content::lang.form.css_code
+            type: codeeditor
+            language: css
+            size: large
+            span: full
+
+secondaryTabs:
+    fields:
+
+        position:
+            label: indikator.content::lang.form.position
+            type: section
+            comment: indikator.content::lang.form.position_comment
+
+        top:
+            label: indikator.content::lang.form.top
+            span: auto
+
+        right:
+            label: indikator.content::lang.form.right
+            span: auto
+
+        botton:
+            label: indikator.content::lang.form.botton
+            span: auto
+
+        left:
+            label: indikator.content::lang.form.left
+            span: auto
+
+        size:
+            label: indikator.content::lang.form.size
+            type: section
+            comment: indikator.content::lang.form.size_comment
+
+        width:
+            label: indikator.content::lang.form.width
+            span: auto
+
+        height:
+            label: indikator.content::lang.form.height
+            span: auto

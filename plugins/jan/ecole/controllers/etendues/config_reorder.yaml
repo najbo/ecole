@@ -1,5 +1,0 @@
-title: Etendues
-modelClass: Jan\Ecole\Models\Etendue
-nameFrom: titre
-toolbar:
-    buttons: reorder_toolbar

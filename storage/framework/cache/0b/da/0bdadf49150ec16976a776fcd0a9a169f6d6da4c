@@ -1,6 +1,4 @@
-1533330518a:1:{s:13:"site/meta.htm";a:6:{s:8:"fileName";s:13:"site/meta.htm";s:7:"content";s:755:"[viewBag]
-==
-<meta charset="utf-8">
+1533389002a:1:{s:13:"site/meta.htm";a:5:{s:8:"fileName";s:13:"site/meta.htm";s:7:"content";s:723:"<meta charset="utf-8">
 {% if this.page.meta_title %}
     <title>{{ this.page.meta_title|_ }} - {{ 'site.name'|_ }}</title>
     <meta name="title" content="{{ this.page.meta_title|_ }}">
@@ -10,14 +8,14 @@
 {% if this.page.meta_description %}
     <meta name="description" content="{{ this.page.meta_description|_ }}">
 {% endif %}
-<meta name="author" content="Jan Boesch">
+<meta name="author" content="OctoberCMS">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="OctoberCMS">
 <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
 {% styles %}
 <link href="{{ [
     'assets/css/theme.css'
-]|theme }}" rel="stylesheet">";s:5:"mtime";i:1533317392;s:6:"markup";s:740:"<meta charset="utf-8">
+]|theme }}" rel="stylesheet">";s:5:"mtime";i:1533376038;s:6:"markup";s:723:"<meta charset="utf-8">
 {% if this.page.meta_title %}
     <title>{{ this.page.meta_title|_ }} - {{ 'site.name'|_ }}</title>
     <meta name="title" content="{{ this.page.meta_title|_ }}">
@@ -27,11 +25,11 @@
 {% if this.page.meta_description %}
     <meta name="description" content="{{ this.page.meta_description|_ }}">
 {% endif %}
-<meta name="author" content="Jan Boesch">
+<meta name="author" content="OctoberCMS">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="OctoberCMS">
 <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
 {% styles %}
 <link href="{{ [
     'assets/css/theme.css'
-]|theme }}" rel="stylesheet">";s:4:"code";N;s:7:"viewBag";a:0:{}}}
+]|theme }}" rel="stylesheet">";s:4:"code";N;}}

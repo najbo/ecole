@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.blog
+form: ~/plugins/indikator/content/models/blog/fields.yaml
+
+modelClass: Indikator\Content\Models\Blog
+defaultRedirect: indikator/content/blog
+
+create:
+    redirect: indikator/content/blog/update/:id
+    redirectClose: indikator/content/blog
+
+update:
+    redirect: indikator/content/blog/update/:id
+    redirectClose: indikator/content/blog

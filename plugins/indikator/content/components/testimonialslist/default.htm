@@ -1,0 +1,37 @@
+{% set posts = __SELF__.posts %}
+
+<div class="testimonials-list">
+    {% for post in posts %}
+        <div class="testimonials">
+            <div class="testimonials-info">
+                <h3 class="testimonials-title">{{ post.title }}</h3>
+                <div class="testimonials-name">
+                    {{ post.name }}
+                </div>
+                {% if post.position %}
+                <div class="testimonials-position">
+                    {{ post.position }}
+                </div>
+                {% endif %}
+                {% if post.company %}
+                <div class="testimonials-company">
+                    {{ post.company }}
+                </div>
+                {% endif %}
+                {% if post.webpage %}
+                <div class="testimonials-webpage">
+                    <a href="{{ post.webpage }}" target="_blank">{{ post.webpage }}</a>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="testimonials-content">
+                {{ post.content|raw }}
+            </div>
+        </div>
+    {% else %}
+        <div class="no-post">{{ noPostsMessage }}</div>
+    {% endfor %}
+</div>
+
+{{ posts.render|raw }}

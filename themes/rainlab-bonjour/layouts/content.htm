@@ -4,8 +4,6 @@ description = "Layout for Static Pages"
 forceUrl = 0
 
 [staticPage]
-useContent = 1
-default = 0
 ==
 <!DOCTYPE html>
 <html>
@@ -43,12 +41,6 @@ default = 0
                 {% if placeholder('extraContent') %}
                     <div class="static-content-extra">
                         {% placeholder extraContent title="Extra content" %}
-                    </div>
-                {% endif %}
-                
-                {% if placeholder('titre') %}
-                    <div class="static-content-extra">
-                        {% placeholder titre title="Titre" %}
                     </div>
                 {% endif %}
             </div>

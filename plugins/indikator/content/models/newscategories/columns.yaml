@@ -1,0 +1,66 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: indikator.content::lang.form.id
+        invisible: true
+
+    image:
+        label: indikator.content::lang.form.featured_image
+        sortable: false
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/newscategories/_image.htm
+
+    name:
+        label: indikator.content::lang.form.name
+        searchable: true
+
+    slug:
+        label: indikator.content::lang.form.slug
+        searchable: true
+        invisible: true
+
+    sort_order:
+        label: indikator.content::lang.list.order
+        invisible: true
+
+    stat_view:
+        label: indikator.content::lang.list.stat_view
+
+    stat_date:
+        label: indikator.content::lang.list.stat_date
+        searchable: true
+        invisible: true
+        type: datetime
+
+    stat_item:
+        label: indikator.content::lang.form.news
+        searchable: true
+        type: partial
+        path: ~/plugins/indikator/content/models/newscategories/_items.htm
+
+    featured:
+        label: indikator.content::lang.form.featured
+        searchable: true
+        invisible: true
+        type: featured
+
+    status:
+        label: indikator.content::lang.form.status
+        sortable: false
+        type: status
+
+    created_at:
+        label: indikator.content::lang.list.created_at
+        searchable: true
+        type: datetime
+
+    updated_at:
+        label: indikator.content::lang.list.updated_at
+        searchable: true
+        invisible: true
+        type: datetime

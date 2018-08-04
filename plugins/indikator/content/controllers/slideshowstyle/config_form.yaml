@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.slideshowstyle
+form: ~/plugins/indikator/content/models/slideshowstyle/fields.yaml
+
+modelClass: Indikator\Content\Models\SlideshowStyle
+defaultRedirect: indikator/content/slideshowstyle
+
+create:
+    redirect: indikator/content/slideshowstyle/update/:id
+    redirectClose: indikator/content/slideshowstyle
+
+update:
+    redirect: indikator/content/slideshowstyle/update/:id
+    redirectClose: indikator/content/slideshowstyle

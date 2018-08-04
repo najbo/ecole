@@ -1,0 +1,8 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><?= e(trans($this->pageTitle)) ?></li>
+        <li><span class="text-info"><strong><?= Indikator\Content\Models\Tags::count() ?></strong> <?= e(trans('indikator.content::lang.list.pieces')) ?></span></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?= $this->listRender() ?>

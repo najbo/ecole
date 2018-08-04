@@ -1,0 +1,151 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: indikator.content::lang.form.title
+        required: true
+        span: auto
+
+    slug:
+        label: indikator.content::lang.form.slug
+        required: true
+        preset: title
+        span: auto
+
+tabs:
+    fields:
+
+        summary:
+            tab: indikator.content::lang.form.summary
+            type: richeditor
+            size: large
+
+        content:
+            tab: indikator.content::lang.form.content
+            type: richeditor
+            size: giant
+
+        images:
+            tab: indikator.content::lang.form.attachments
+            type: repeater
+            prompt: indikator.content::lang.form.new_image
+            form:
+                fields:
+                    img_path:
+                        label: indikator.content::lang.form.image
+                        type: mediafinder
+                        mode: file
+                        span: auto
+                    img_name:
+                        label: indikator.content::lang.form.name
+                        span: auto
+
+        files:
+            tab: indikator.content::lang.form.attachments
+            type: repeater
+            prompt: indikator.content::lang.form.new_file
+            form:
+                fields:
+                    file_path:
+                        label: indikator.content::lang.form.file
+                        type: mediafinder
+                        mode: file
+                        span: auto
+                    file_name:
+                        label: indikator.content::lang.form.name
+                        span: auto
+
+        related_blog:
+            tab: indikator.content::lang.form.related
+            type: repeater
+            prompt: indikator.content::lang.new.blog
+            form:
+                fields:
+                    blog_id:
+                        label: indikator.content::lang.form.post
+                        type: dropdown
+
+        related_news:
+            tab: indikator.content::lang.form.related
+            type: repeater
+            prompt: indikator.content::lang.new.news
+            form:
+                fields:
+                    news_id:
+                        label: indikator.content::lang.form.news
+                        type: dropdown
+
+        related_portfolio:
+            tab: indikator.content::lang.form.related
+            type: repeater
+            prompt: indikator.content::lang.new.portfolio
+            form:
+                fields:
+                    portfolio_id:
+                        label: indikator.content::lang.form.portfolio
+                        type: dropdown
+
+        categories:
+            tab: indikator.content::lang.form.classification
+            label: indikator.content::lang.menu.categories
+            type: relation
+            span: auto
+
+        tags:
+            tab: indikator.content::lang.form.classification
+            label: indikator.content::lang.menu.tags
+            type: relation
+            span: auto
+
+        meta_title:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_title
+            span: auto
+
+        meta_keywords:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_keywords
+            span: auto
+
+        meta_desc:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_desc
+            type: textarea
+            size: small
+
+secondaryTabs:
+    fields:
+
+        image:
+            label: indikator.content::lang.form.featured_image
+            type: mediafinder
+            mode: image
+
+        published_at:
+            label: indikator.content::lang.form.published_at
+            type: datepicker
+            mode: datetime
+            comment: indikator.content::lang.form.published_at_comment
+
+        status:
+            label: indikator.content::lang.form.status
+            required: true
+            type: radio
+            options:
+                1: indikator.content::lang.form.status_active
+                2: indikator.content::lang.form.status_inactive
+            default: 1
+            span: auto
+
+        featured:
+            label: indikator.content::lang.form.featured
+            required: true
+            type: radio
+            options:
+                1: indikator.content::lang.form.yes
+                2: indikator.content::lang.form.no
+            default: 2
+            span: auto

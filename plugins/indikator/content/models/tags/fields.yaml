@@ -1,0 +1,48 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: indikator.content::lang.form.name
+        required: true
+        span: auto
+
+    slug:
+        label: indikator.content::lang.form.slug
+        required: true
+        preset: name
+        span: auto
+
+tabs:
+    fields:
+
+        description:
+            tab: indikator.content::lang.form.description
+            type: richeditor
+            size: large
+
+        meta_title:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_title
+            span: auto
+
+        meta_keywords:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_keywords
+            span: auto
+
+        meta_desc:
+            tab: indikator.content::lang.form.seo
+            label: indikator.content::lang.form.meta_desc
+            type: textarea
+            size: small
+
+secondaryTabs:
+    fields:
+
+        image:
+            label: indikator.content::lang.form.featured_image
+            type: mediafinder
+            mode: image

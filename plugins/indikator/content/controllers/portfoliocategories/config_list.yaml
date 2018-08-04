@@ -1,0 +1,25 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: indikator.content::lang.menu.categories
+list: ~/plugins/indikator/content/models/portfoliocategories/columns.yaml
+
+modelClass: Indikator\Content\Models\PortfolioCategories
+recordUrl: indikator/content/portfoliocategories/update/:id
+noRecordsMessage: backend::lang.list.no_records
+
+recordsPerPage: 15
+showCheckboxes: true
+showSetup: true
+
+defaultSort:
+    column: name
+    direction: asc
+
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt
+
+filter: config_filter.yaml

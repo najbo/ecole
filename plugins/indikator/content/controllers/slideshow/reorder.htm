@@ -1,0 +1,10 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('indikator/content/slideshow') ?>"><?= e(trans('indikator.content::lang.menu.slideshow')) ?></a></li>
+        <li><?= e(trans($this->pageTitle)) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<div style="margin-left:20px;">
+    <?= $this->reorderRender() ?>
+</div>

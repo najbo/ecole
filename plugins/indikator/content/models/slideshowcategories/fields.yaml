@@ -1,0 +1,18 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: indikator.content::lang.form.name
+        required: true
+        span: full
+
+    description:
+        label: indikator.content::lang.form.description
+        type: richeditor
+        size: large
+
+secondaryTabs:
+    fields:

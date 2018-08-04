@@ -1,0 +1,95 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: indikator.content::lang.form.id
+        invisible: true
+
+    image:
+        label: indikator.content::lang.form.featured_image
+        sortable: false
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/portfolio/_image.htm
+
+    title:
+        label: indikator.content::lang.form.title
+        searchable: true
+
+    slug:
+        label: indikator.content::lang.form.slug
+        searchable: true
+        invisible: true
+
+    client:
+        label: indikator.content::lang.form.client
+        searchable: true
+
+    webpage:
+        label: indikator.content::lang.form.webpage
+        searchable: true
+        invisible: true
+
+    categories:
+        label: indikator.content::lang.menu.categories
+        sortable: false
+        type: partial
+        path: ~/plugins/indikator/content/models/portfolio/_categories.htm
+
+    tags:
+        label: indikator.content::lang.menu.tags
+        sortable: false
+        invisible: true
+        type: partial
+        path: ~/plugins/indikator/content/models/portfolio/_tags.htm
+
+    sort_order:
+        label: indikator.content::lang.list.order
+        invisible: true
+
+    stat_view:
+        label: indikator.content::lang.list.stat_view
+
+    stat_date:
+        label: indikator.content::lang.list.stat_date
+        searchable: true
+        invisible: true
+        type: datetime
+
+    length:
+        label: indikator.content::lang.list.length
+        sortable: false
+        type: partial
+        path: ~/plugins/indikator/content/models/portfolio/_length.htm
+
+    featured:
+        label: indikator.content::lang.form.featured
+        searchable: true
+        invisible: true
+        type: featured
+
+    status:
+        label: indikator.content::lang.form.status
+        sortable: false
+        type: status
+
+    published_at:
+        label: indikator.content::lang.form.published_at
+        searchable: true
+        invisible: true
+        type: datetime
+
+    created_at:
+        label: indikator.content::lang.list.created_at
+        searchable: true
+        invisible: true
+        type: datetime
+
+    updated_at:
+        label: indikator.content::lang.list.updated_at
+        searchable: true
+        invisible: true
+        type: datetime

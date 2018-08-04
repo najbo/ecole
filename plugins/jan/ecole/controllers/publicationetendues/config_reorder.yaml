@@ -1,0 +1,5 @@
+title: Etendues
+modelClass: Jan\Ecole\Models\PublicationEtendue
+nameFrom: titre
+toolbar:
+    buttons: reorder_toolbar

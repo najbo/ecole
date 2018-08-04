@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: indikator.content::lang.title.tags
+form: ~/plugins/indikator/content/models/tags/fields.yaml
+
+modelClass: Indikator\Content\Models\Tags
+defaultRedirect: indikator/content/tags
+
+create:
+    redirect: indikator/content/tags/update/:id
+    redirectClose: indikator/content/tags
+
+update:
+    redirect: indikator/content/tags/update/:id
+    redirectClose: indikator/content/tags

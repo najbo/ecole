@@ -1,0 +1,11 @@
+<?php
+
+$sql = Db::table('indikator_content_tags_news')->where('news_id', $record->id)->get()->all();
+
+foreach ($sql as $item) {
+    $result[] = Db::table('indikator_content_tags')->whereId($item->tags_id)->value('name');
+}
+
+if (isset($result)) {
+    echo implode(', ', $result);
+}

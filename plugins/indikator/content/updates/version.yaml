@@ -1,0 +1,72 @@
+1.0.0:
+    - First version of Content Plus.
+    - create_blog_table.php
+    - create_blog_categories_table.php
+    - create_news_table.php
+    - create_news_categories_table.php
+    - create_portfolio_table.php
+    - create_portfolio_categories_table.php
+    - create_slideshow_table.php
+    - create_testimonials_table.php
+    - create_tags_table.php
+1.0.1: Minor bugfixes.
+1.0.2:
+    - Minor improvements.
+    - rename_categories_name.php
+1.0.3: Minor bugfixes and improvements.
+1.0.4: Support the Sitemap plugin.
+1.0.5: Minor bugfixes.
+1.0.6: Added the daterange filters for lists.
+1.0.7:
+    - Minor UI improvements.
+    - add_featured_field_to_tables.php
+1.0.8:
+    - Minor improvements and bugfix.
+    - update_timestamp_nullable.php
+1.1.0: Added the Statistics page.
+1.1.1:
+    - Improved the Slideshow page.
+    - create_slideshow_style_table.php
+    - add_fields_to_slideshow_table.php
+1.1.2: Added translation support for slug.
+1.1.3:
+    - Improved the Testimonials page.
+    - add_fields_to_testimonials_table.php
+1.1.4:
+    - Added the Tags list component.
+    - rename_category_fields.php
+1.1.5: Minor improvements and bugfix.
+1.1.6: Added the Import/Export feature.
+1.1.7: Extend the one page components.
+1.1.8: Added the preview feature.
+1.2.0: Improved the one page components.
+1.2.1:
+    - Fixed the view columns sorting.
+    - change_columns_type.php
+1.2.2: Added the Length column for lists.
+1.2.3: Added new icon for main navigation.
+1.2.4: Minor improvements for Testimonials.
+1.2.5: Fixed issue on the Tags list page.
+1.2.6: Fixed the category filter issue.
+1.2.7: Improved the view of components.
+1.2.8: Support the RainLab Page plugin.
+1.3.0:
+    - Added categories to Slideshow page.
+    - create_slideshow_categories_table.php
+1.3.1: Added 6 brand new report widgets.
+1.3.2: Added Featured column to the lists.
+1.3.3: Added the Summary report widget.
+1.3.4: Improved the single page components.
+1.3.5: Minor improvements and bugfix.
+1.3.6:
+    - Added sorting option to Portfolio.
+    - add_fields_to_portfolio_table.php
+1.3.7:
+    - Added navigation links to the forms.
+    - fix_sorting_issue.php
+1.3.8: !!! Updated for October 420+.
+1.3.9: Fixed some bugs.
+1.4.0: Improved the documentation.
+1.4.1: Added 3 new dashboard widgets.
+1.4.2: Extended the portfolio component.
+1.4.3: Minor UI and documentation update.
