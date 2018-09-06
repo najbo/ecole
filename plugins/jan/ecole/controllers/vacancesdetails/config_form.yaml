@@ -1,0 +1,10 @@
+name: VacancesDetails
+form: $/jan/ecole/models/vacancesdetail/fields.yaml
+modelClass: Jan\Ecole\Models\VacancesDetail
+defaultRedirect: jan/ecole/vacancesdetails
+create:
+    redirect: 'jan/ecole/vacancesdetails/update/:id'
+    redirectClose: jan/ecole/vacancesdetails
+update:
+    redirect: jan/ecole/vacancesdetails
+    redirectClose: jan/ecole/vacancesdetails

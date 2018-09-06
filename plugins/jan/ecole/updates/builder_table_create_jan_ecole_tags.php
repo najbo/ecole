@@ -13,9 +13,12 @@ class BuilderTableCreateJanEcoleTags extends Migration
             $table->increments('id')->unsigned();
             $table->string('tag_short', 10);
             $table->string('tag_titre');
-            $table->boolean('actif')->default(1);
-            $table->timestamp('deleted_at')->nullable();
             $table->string('color')->nullable();
+            $table->string('slug')->nullable();
+            $table->boolean('is_actif')->default(1);
+            $table->boolean('is_frontend')->default(1);
+            $table->timestamp('deleted_at')->nullable();
+            
         });
     }
     

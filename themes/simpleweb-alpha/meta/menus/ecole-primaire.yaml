@@ -1,0 +1,40 @@
+name: 'Ecole primaire2'
+items:
+    -
+        title: 'Ecole primaire'
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: ep
+        replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Notre école'
+                nesting: '1'
+                type: static-page
+                url: ''
+                code: ''
+                reference: ep-ecole
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Documents
+                nesting: '1'
+                type: static-page
+                url: ''
+                code: ''
+                reference: ep-documents
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'

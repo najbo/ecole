@@ -1,0 +1,31 @@
+static-pages:
+    index: {  }
+    ep:
+        ep-ecole:
+            ep-ecole-accueil: {  }
+            ep-ecole-presentation: {  }
+            ep-ecole-direction: {  }
+            ep-ecole-enseignants: {  }
+            ep-ecole-regles-de-vie: {  }
+            ep-ecole-sante-et-prevention: {  }
+            ep-ecole-chemin-de-lecole: {  }
+        ep-documents:
+            ep-documents-horaires: {  }
+            ep-documents-vacances-et-conges: {  }
+            ep-formulaires: {  }
+        ep-publications:
+            ep-informations: {  }
+            ep-compte-rendus: {  }
+        ep-services:
+            ep-services-plan-du-site: {  }
+            ep-services-chercher: {  }
+            ep-services-liens-externes: {  }
+            ep-services-backend: {  }
+            ep-services-impressum: {  }
+    es:
+        es-notre-ecole: {  }
+        es-documents:
+            es-documents-horaires: {  }
+            es-documents-vacances:
+                es-documents-vacances-detail: {  }
+        es-dernieres-nouvelles: {  }

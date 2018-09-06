@@ -1,7 +1,7 @@
 name: 'Main Menu'
 items:
     -
-        title: Home
+        title: Accueil
         nesting: ''
         type: cms-page
         url: ''
@@ -23,18 +23,14 @@ items:
         cmsPage: ''
         replace: ''
         viewBag:
-            isHidden: '0'
+            isHidden: '1'
             cssClass: ''
             isExternal: '0'
     -
         title: Messages
-        nesting: ''
         type: cms-page
-        url: ''
         code: messages
         reference: messages
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -54,9 +50,52 @@ items:
             isExternal: '0'
     -
         title: Video
+        nesting: ''
         type: cms-page
+        url: ''
         code: video
         reference: video
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '1'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Essai
+        nesting: ''
+        type: url
+        url: 'http://www.jan-boesch.net'
+        code: essai
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+    -
+        title: 'Ecole primaire'
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: ep
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Ecole secondaire'
+        nesting: ''
+        type: url
+        url: /
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

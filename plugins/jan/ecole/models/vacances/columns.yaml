@@ -1,0 +1,30 @@
+columns:
+    titre:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: true
+    annee:
+        label: Année
+        type: text
+        searchable: true
+        sortable: true
+        select: titre
+        relation: annee
+    structure:
+        label: Structure
+        type: text
+        searchable: true
+        sortable: true
+        select: titre
+        relation: structure
+    is_actif:
+        label: Actif
+        type: switch
+        searchable: true
+        sortable: true
+    is_frontend:
+        label: Frontend
+        type: switch
+        searchable: true
+        sortable: true

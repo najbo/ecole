@@ -1,0 +1,38 @@
+columns:
+    titre:
+        label: Titre
+        type: text
+        searchable: true
+        sortable: false
+    debut:
+        label: Début
+        type: date
+        searchable: true
+        sortable: false
+        format: d.m.Y
+    fin:
+        label: Fin
+        type: date
+        searchable: true
+        sortable: false
+        format: d.m.Y
+    duree:
+        label: Durée
+        type: text
+        searchable: true
+        sortable: false
+    is_actif:
+        label: Actif
+        type: switch
+        searchable: true
+        sortable: false
+    is_frontend:
+        label: Frontend
+        type: switch
+        searchable: true
+        sortable: false
+    description:
+        label: Description
+        type: text
+        searchable: true
+        sortable: false        

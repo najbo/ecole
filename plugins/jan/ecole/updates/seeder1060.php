@@ -7,11 +7,12 @@ class Seeder1060 extends Seeder
 {
     public function run()
     {
+        PublicationType::truncate();
         
         PublicationType::create([
             'id'                => 1,
             'abreviation'       => 'news',
-            'titre'             => 'News',
+            'titre'             => 'Compte-rendu',
             'slug'              => 'news'
           
         ]);

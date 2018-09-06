@@ -24,3 +24,6 @@ columns:
         type: switch
         searchable: true
         sortable: true
+    is_frontend:
+        label: Frontend
+        type: switch

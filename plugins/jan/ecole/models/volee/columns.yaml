@@ -24,6 +24,9 @@ columns:
         label: Années
         type: number
         select: 'year(fin) - year(debut)'
-    actif:
+    is_actif:
         label: Actif
+        type: switch
+    is_frontend:
+        label: Frontend
         type: switch

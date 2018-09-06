@@ -2,181 +2,58 @@
     - 'Initialize plugin.'
 1.0.2:
     - 'Created table jan_ecole_annees'
-    - builder_table_create_jan_ecole_annees.php
+    - builder_table_create_jan_gestionclasses_annees.php
 1.0.3:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees.php
-1.0.4:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_2.php
-1.0.5:
     - 'Created table jan_ecole_volees'
-    - builder_table_create_jan_ecole_volees.php
-1.0.6:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_3.php
-1.0.7:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees.php
-1.0.8:
+    - builder_table_create_jan_gestionclasses_volees.php
+1.0.4:
     - 'Created table jan_ecole_structures'
-    - builder_table_create_jan_ecole_structures.php
-1.0.9:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_4.php
-1.0.10:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures.php
-1.0.11:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_2.php
-1.0.12:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_2.php
-1.0.13:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_3.php
-1.0.14:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_4.php
-1.0.15:
-    - 'Created table jan_ecole_degres'
+    - builder_table_table_jan_ecole_structures.php
+1.0.5:
+    - 'Created table jan_ecole_classes'
     - builder_table_create_jan_ecole_degres.php
-1.0.16:
-    - 'Updated table jan_ecole_degres'
-    - builder_table_update_jan_ecole_degres.php
-1.0.17:
-    - 'Created table jan_ecole_degres_users'
+1.0.6:
+    - 'Created table jan_ecole_classes_users'
     - builder_table_create_jan_ecole_degres_users.php
-1.0.18:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_3.php
-1.0.19:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_4.php
-1.0.20:
+1.0.7:
     - 'Updated table_backend_users'
     - add_new_fields.php
-1.0.21:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_5.php
-1.0.22:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_5.php
-1.0.23:
-    - 'Updated table jan_ecole_degres'
-    - builder_table_update_jan_ecole_degres_2.php
-1.0.24:
-    - 'Updated table jan_ecole_degres_users'
-    - builder_table_update_jan_ecole_degres_users.php
-1.0.25:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_5.php
-1.0.26:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_6.php
-1.0.27:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_6.php
-1.0.28:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_7.php
-1.0.29:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_6.php
-1.0.30:
+1.0.8:
     - 'Created table jan_ecole_tags'
     - builder_table_create_jan_ecole_tags.php
-1.0.31:
-    - 'Created table jan_ecole_typeinfo'
+1.0.9:
+    - 'Created table jan_ecole_publications_types'
     - builder_table_create_jan_ecole_typeinfo.php
-1.0.32:
-    - 'Updated table jan_ecole_tags'
-    - builder_table_update_jan_ecole_tags.php
-1.0.33:
-    - 'Created table jan_ecole_infoscenters'
+1.0.10:
+    - 'Created table jan_ecole_publications'
     - builder_table_create_jan_ecole_infos_center.php
-1.0.34:
-    - 'Updated table jan_ecole_annees'
-    - builder_table_update_jan_ecole_annees_8.php
-1.0.35:
-    - 'Updated table jan_ecole_degres'
-    - builder_table_update_jan_ecole_degres_3.php
-1.0.36:
-    - 'Updated table jan_ecole_degres_users'
-    - builder_table_update_jan_ecole_degres_users_2.php
-1.0.37:
-    - 'Updated table jan_ecole_infoscenter'
-    - builder_table_update_jan_ecole_infoscenter.php
-1.0.38:
-    - 'Updated table jan_ecole_structures'
-    - builder_table_update_jan_ecole_structures_7.php
-1.0.39:
-    - 'Updated table jan_ecole_tags'
-    - builder_table_update_jan_ecole_tags_2.php
-1.0.40:
-    - 'Updated table jan_ecole_typeinfo'
-    - builder_table_update_jan_ecole_typeinfo.php
-1.0.41:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees_7.php
-1.0.42:
-    - 'Updated table jan_ecole_volees'
-    - builder_table_update_jan_ecole_volees8.php
-1.0.43:
-    - 'Updated table jan_ecole_infoscenter'
-    - builder_table_update_jan_ecole_infoscenter_2.php
-1.0.44:
-    - 'Created table jan_ecole_etendue'
+1.0.11:
+    - 'Created table jan_ecole_publications_etendues'
     - builder_table_create_jan_ecole_etendue.php
-1.0.45:
-    - 'Updated table jan_ecole_etendue'
-    - builder_table_update_jan_ecole_etendues.php
-1.0.46:
-    - 'Updated table jan_ecole_etendues'
-    - builder_table_update_jan_ecole_etendues_2.php
-1.0.47:
-    - 'Updated table jan_ecole_infoscenter'
-    - builder_table_update_jan_ecole_publications.php
-1.0.48:
-    - 'Updated table jan_ecole_etendues'
-    - builder_table_update_jan_ecole_etendues_3.php
-1.0.49:
-    - 'Updated table jan_ecole_typeinfo'
-    - builder_table_update_jan_ecole_type_publication.php
-1.0.50:
-    - 'Updated table jan_ecole_publications'
-    - builder_table_update_jan_ecole_publications_2.php
-1.0.51:
-    - 'Updated table jan_ecole_publications'
-    - builder_table_update_jan_ecole_publications3.php
-1.0.52:
-    - 'Updated table jan_ecole_types_publication'
-    - builder_table_update_jan_ecole_publications_types.php
-1.0.53:
-    - 'Updated table jan_ecole_degres'
-    - builder_table_update_jan_ecole_classes.php
-1.0.54:
-    - 'Updated table jan_ecole_degres_users'
-    - builder_table_update_jan_ecole_degres_users_3.php
-1.0.55:
-    - 'Updated table jan_ecole_degres_users'
-    - builder_table_update_jan_ecole_classes_users.php
-1.0.56:
-    - 'Updated table jan_ecole_classes'
-    - builder_table_update_jan_ecole_classes_2.php
-1.0.57:
-    - 'Updated table jan_ecole_publications'
-    - builder_table_update_jan_ecole_publications_3.php
-1.0.58:
-    - 'Updated table jan_ecole_publications'
-    - builder_table_update_jan_ecole_publications_4.php
-1.0.59:
-    - 'Updated table jan_ecole_publications_types'
-    - builder_table_update_jan_ecole_publications_types_2.php
-1.0.60:
+1.0.12:
     - 'Seed table jan_ecole_publications_types'
     - seeder1060.php
-1.0.61:
-    - 'Updated table jan_ecole_etendues'
-    - builder_table_update_jan_ecole_publications_etendues.php
+1.0.13:
+    - 'Seed table jan_ecole_publications_etendues'
+    - seeder1063.php
+1.0.14:
+    - 'Seed backend_user_groups'
+    - seeder1064.php
+1.0.15:
+    - 'Seed backend_user_roles'
+    - seeder1065.php
+1.0.16:
+    - 'Seed table jan_ecole_structures'
+    - seeder1067.php
+1.0.17:
+    - 'Seed table jan_ecole_annees'
+    - seeder1068.php
+1.0.18:
+    - 'Seed table jan_ecole_volees'
+    - seeder1069.php
+1.0.19:
+    - 'Created table jan_ecole_vacances'
+    - builder_table_create_jan_ecole_vacances.php
+1.0.20:
+    - 'Created table jan_ecole_vacances_details'
+    - builder_table_create_jan_ecole_vacances_details.php

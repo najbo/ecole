@@ -24,6 +24,13 @@ class Enseignant extends Model
      */
     protected $fillable = [];
 
+
+
+    public function getFullNameAttribute()
+    {
+        return trim($this->first_name . ' ' . $this->last_name);
+    }
+
     /**
      * @var array Relations
      */

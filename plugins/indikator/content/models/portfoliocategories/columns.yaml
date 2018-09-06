@@ -11,6 +11,7 @@ columns:
     image:
         label: indikator.content::lang.form.featured_image
         sortable: false
+        clickable: false
         invisible: true
         type: partial
         path: ~/plugins/indikator/content/models/portfoliocategories/_image.htm

@@ -1,0 +1,7 @@
+{% set enseignants = __SELF__.enseignants %}
+
+<ul>
+	{% for enseignant in enseignants %}
+		<li>{{ enseignant.first_name }} {{ enseignant.last_name }}</li>
+	{% endfor %}
+</ul>

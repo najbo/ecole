@@ -1,0 +1,15 @@
+title: VacancesDetails
+modelClass: Jan\Ecole\Models\VacancesDetail
+list: $/jan/ecole/models/vacancesdetail/columns.yaml
+recordUrl: 'jan/ecole/vacancesdetails/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: debut
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

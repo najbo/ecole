@@ -4,6 +4,7 @@ columns:
         type: text
         searchable: true
         sortable: false
+        width: 50px
     titre:
         label: Titre
         type: text

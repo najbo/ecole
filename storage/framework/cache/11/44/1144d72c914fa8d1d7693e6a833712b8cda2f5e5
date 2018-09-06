@@ -1,0 +1,74 @@
+1536095302a:1:{s:33:"publications/informations_old.htm";a:5:{s:8:"fileName";s:33:"publications/informations_old.htm";s:7:"content";s:935:"{% if publications.count > 0 %}
+    
+    <h5>Il y a {{ publications.count }} articles affichés</h5>
+	<div class="list-group">
+		{% for publication in publications %}
+
+<div class="list-group-item">
+	
+	<a href="#">
+    	<h4 class="media-heading">{{ publication.date_event | date('d.m.y') }} - {{ publication.titre }} par {{ publication.user.first_name }}</h4>
+    </a>
+
+<div class="media">
+  <div class="media-left">
+
+    	{% if publication.banner %}
+        <div class="media-object"><img src="{{ publication.banner.thumb(125,auto,{'mode':'crop'}) }}" title="{{ publication.banner.title }}" alt="{{ publication.banner.description }}"></div>
+    {% endif %}
+  </div>
+  <div class="media-body">
+  	
+    <div class="list-group">{{ publication.accroche|raw }}</div>
+
+	
+	    
+
+  </div>
+</div>
+
+	
+	    	</div>		
+		{% endfor %}
+	</div>
+
+{% else %}
+    <h5>{{ __SELF__.property('type') }}</h5>
+{% endif %}
+";s:5:"mtime";i:1535880672;s:6:"markup";s:933:"{% if publications.count > 0 %}
+    
+    <h5>Il y a {{ publications.count }} articles affichés</h5>
+	<div class="list-group">
+		{% for publication in publications %}
+
+<div class="list-group-item">
+	
+	<a href="#">
+    	<h4 class="media-heading">{{ publication.date_event | date('d.m.y') }} - {{ publication.titre }} par {{ publication.user.first_name }}</h4>
+    </a>
+
+<div class="media">
+  <div class="media-left">
+
+    	{% if publication.banner %}
+        <div class="media-object"><img src="{{ publication.banner.thumb(125,auto,{'mode':'crop'}) }}" title="{{ publication.banner.title }}" alt="{{ publication.banner.description }}"></div>
+    {% endif %}
+  </div>
+  <div class="media-body">
+  	
+    <div class="list-group">{{ publication.accroche|raw }}</div>
+
+	
+	    
+
+  </div>
+</div>
+
+	
+	    	</div>		
+		{% endfor %}
+	</div>
+
+{% else %}
+    <h5>{{ __SELF__.property('type') }}</h5>
+{% endif %}";s:4:"code";N;}}

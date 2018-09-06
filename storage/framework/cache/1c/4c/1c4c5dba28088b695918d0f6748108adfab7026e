@@ -1,0 +1,13 @@
+1536095302a:1:{s:25:"ep-ecole-presentation.htm";a:7:{s:8:"fileName";s:25:"ep-ecole-presentation.htm";s:7:"content";s:575:"[viewBag]
+title = "Présentation"
+url = "/ep/presentation"
+layout = "ecole-primaire"
+is_hidden = 0
+navigation_hidden = 0
+meta_title = "Présentation de l'Ecole primaire"
+meta_description = "Bla bal bla"
+==
+<p>Présentation ici ...</p>
+<figure data-component="Jan\Ecole\Components\Publications" data-inspector-id="inspectorid-666803179308" data-property-archive="0" data-property-etendue="3" data-property-etendueelements="0" data-property-highlights="1" data-property-results="20" data-property-sortorder="date_event asc" data-snippet="informations">&nbsp;</figure>";s:5:"mtime";i:1535895133;s:6:"markup";s:360:"<p>Présentation ici ...</p>
+<figure data-component="Jan\Ecole\Components\Publications" data-inspector-id="inspectorid-666803179308" data-property-archive="0" data-property-etendue="3" data-property-etendueelements="0" data-property-highlights="1" data-property-results="20" data-property-sortorder="date_event asc" data-snippet="informations">&nbsp;</figure>";s:4:"code";N;s:7:"viewBag";a:7:{s:5:"title";s:13:"Présentation";s:3:"url";s:16:"/ep/presentation";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:10:"meta_title";s:33:"Présentation de l'Ecole primaire";s:16:"meta_description";s:11:"Bla bal bla";}s:12:"parsedMarkup";s:360:"<p>Présentation ici ...</p>
+<figure data-component="Jan\Ecole\Components\Publications" data-inspector-id="inspectorid-666803179308" data-property-archive="0" data-property-etendue="3" data-property-etendueelements="0" data-property-highlights="1" data-property-results="20" data-property-sortorder="date_event asc" data-snippet="informations">&nbsp;</figure>";}}

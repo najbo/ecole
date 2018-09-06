@@ -1,0 +1,23 @@
+description = "Layout test"
+
+[staticMenu]
+code = "main-menu"
+
+[staticBreadcrumbs]
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<html>
+    <head>
+        <title>{{ this.page.title }}</title>
+    </head>
+    <body>
+        
+        {% component 'staticMenu' %}
+        {% component 'staticBreadcrumbs' %}
+        {% page %}
+        
+    </body>
+</html>

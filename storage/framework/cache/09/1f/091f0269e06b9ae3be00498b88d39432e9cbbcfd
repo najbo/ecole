@@ -1,0 +1,18 @@
+1536095342a:1:{s:7:"404.htm";a:9:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:377:"title = "Page not found (404)"
+url = "/404"
+layout = "site"
+is_hidden = 0
+==
+<section class="container content-margin">
+    <div class="box">
+        <h1 class="text-center">Ouch ! Pan dans les dents... erreur 404 !</h1>
+        <hr class="intro-divider">
+        <p class="text-center">Désolé, mais la page que vous cherchez n'exite pô.</p>
+    </div>
+</section>";s:5:"mtime";i:1535269686;s:6:"markup";s:295:"<section class="container content-margin">
+    <div class="box">
+        <h1 class="text-center">Ouch ! Pan dans les dents... erreur 404 !</h1>
+        <hr class="intro-divider">
+        <p class="text-center">Désolé, mais la page que vous cherchez n'exite pô.</p>
+    </div>
+</section>";s:4:"code";N;s:5:"title";s:20:"Page not found (404)";s:3:"url";s:4:"/404";s:6:"layout";s:4:"site";s:9:"is_hidden";s:1:"0";}}

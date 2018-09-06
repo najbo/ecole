@@ -22,7 +22,12 @@ fields:
             type: slug
         type: text
     is_actif:
-        label: Switch
+        label: 'Actif en backend'
         span: left
+        default: 1
+        type: switch
+    is_frontend:
+        label: Frontend
+        span: auto
         default: 1
         type: switch

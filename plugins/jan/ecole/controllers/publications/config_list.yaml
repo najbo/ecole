@@ -1,0 +1,12 @@
+list: $/jan/ecole/models/publication/columns.yaml
+modelClass: Jan\Ecole\Models\Publication
+title: Publications
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'jan/ecole/publications/update/:id'

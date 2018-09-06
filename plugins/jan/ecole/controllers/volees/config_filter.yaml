@@ -8,8 +8,8 @@ scopes:
         type: switch
         default: 2
         conditions: 
-            - actif = false
-            - actif = true
+            - is_actif = false
+            - is_actif = true
     periode:
         label: Volées actuelles
         type: switch

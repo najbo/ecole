@@ -1,0 +1,65 @@
+name: 'Ecole primaire'
+items:
+    -
+        title: 'Notre école'
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: ep-ecole
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Documents
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: ep-documents
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Dernières nouvelles'
+        nesting: '1'
+        type: static-page
+        code: informations
+        reference: ep-publications
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'La vie des classes'
+        nesting: ''
+        type: url
+        url: /
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Services
+        nesting: '1'
+        type: static-page
+        url: ''
+        code: ''
+        reference: ep-services
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

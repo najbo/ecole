@@ -1,0 +1,132 @@
+[viewBag]
+
+[staticMenu]
+code = "ep"
+==
+{% import _self as nav %}
+
+{% macro render_menu(items) %}
+    {% import _self as nav %}
+    {% for item in items %}
+        {% if item.items %}
+            <li role="presentation" class="dropdown {{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown">
+                    {{ item.title }} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {{ nav.render_menu(item.items) }}
+                </ul>
+            </li>
+        {% else %}
+            <li role="presentation" class="{{ item.isActive ? 'active' }} {{ item.isChildActive ? 'child-active' }}">
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="{{ 'home'|page }}">Ecole primaire <span class="header-text">de Tavannes</span></a>
+            
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-main-collapse">
+            {% if mainMenu.menuItems %}
+                <ul class="nav navbar-nav">
+                    {{ nav.render_menu(mainMenu.menuItems) }}
+                </ul>
+            {% endif %}
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:toggleHelp('#localeHelp')">
+                        <i class="icon-question-sign hidden-xs"></i>
+                        <span class="visible-xs">{{ 'Help' }}</span>
+                    </a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                {% component 'localePicker' %}
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+        
+        
+            <!--/ Boutons à droite si écran trop petit -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            
+            <a class="navbar-brand" href="{{ 'home'|page }}">Ecole primaire <span class="header-text">de Tavannes</span></a>
+          </div>
+          
+          
+          
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar">
+                <li class="active"><a href="{{ 'home'|page }}">Accueil</a></li>
+                <li><a href="{{ 'elements'|page }}">Elements</a></li>
+                <li><a href="{{ 'generic'|page }}">Notre école</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Dirigeants</a></li>
+                    <li><a href="#">Enseignants</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ 'portfolio'|page }}">Portfolio</a></li>
+              <li><a href="{{ 'contact'|page }}">Contact</a></li>
+              
+              
+              
+              
+            </ul>
+            
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">EP</a></li>
+                                <li><a href="#">ES</a></li>
+                                <li><a href="#">EJC</a></li>
+
+                            </ul>
+            
+            
+            
+        </div><!--/.nav-collapse -->
+        
+    </div>
+
+</nav>

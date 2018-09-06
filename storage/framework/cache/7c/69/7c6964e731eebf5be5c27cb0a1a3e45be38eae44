@@ -1,0 +1,118 @@
+1536095342a:1:{s:11:"generic.htm";a:9:{s:8:"fileName";s:11:"generic.htm";s:7:"content";s:5310:"title = "Generic"
+url = "/generic"
+layout = "default"
+is_hidden = 0
+==
+<section class="container content-margin">
+    <div class="page-header text-center">
+        <h1>Présentation de l'école</h1>
+        <hr class="intro-divider">
+        <p>A sample page with example elements ! Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+    </div>
+</section>
+
+<section class="container">
+    <section class="box-image">
+        <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+        <div class="inner-content text-center">
+            <h3>Sed lorem adipiscing</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/3.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+            <h3>Sed lorem adipiscing</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        </div>
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/4.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+            <h3>Accumsan integer</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <section class="box-image">
+        <div class="inner-content text-center">
+        <h3>Sed lorem adipiscing</h3>
+        <hr class="intro-divider">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+</section>";s:5:"mtime";i:1535190841;s:6:"markup";s:5234:"<section class="container content-margin">
+    <div class="page-header text-center">
+        <h1>Présentation de l'école</h1>
+        <hr class="intro-divider">
+        <p>A sample page with example elements ! Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+    </div>
+</section>
+
+<section class="container">
+    <section class="box-image">
+        <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+        <div class="inner-content text-center">
+            <h3>Sed lorem adipiscing</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/3.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+            <h3>Sed lorem adipiscing</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        </div>
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/4.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+            <h3>Accumsan integer</h3>
+            <hr class="intro-divider">
+            <p class="text-justify">Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <section class="box-image">
+        <div class="inner-content text-center">
+        <h3>Sed lorem adipiscing</h3>
+        <hr class="intro-divider">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+</section>";s:4:"code";N;s:5:"title";s:7:"Generic";s:3:"url";s:8:"/generic";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

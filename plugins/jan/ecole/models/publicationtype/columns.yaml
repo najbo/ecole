@@ -1,4 +1,8 @@
 columns:
+    id:
+        label: ID
+        type: text
+        width: 50px
     abreviation:
         label: Abréviation
         type: text
@@ -12,7 +16,7 @@ columns:
         searchable: true
         sortable: true
     slug:
-        label: Slu
+        label: Slug
         type: text
         searchable: true
         sortable: true
@@ -26,3 +30,4 @@ columns:
         type: switch
         searchable: true
         sortable: true
+

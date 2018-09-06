@@ -1,0 +1,29 @@
+name: Site
+items:
+    -
+        title: 'Ecole primaire'
+        type: url
+        url: /ep
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Ecole secondaire'
+        type: url
+        url: /es
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Ecole à journée continue'
+        type: url
+        url: /ejc
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

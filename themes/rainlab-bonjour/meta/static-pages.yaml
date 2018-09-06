@@ -4,3 +4,8 @@ static-pages:
         content-content: {  }
         content-models: {  }
         content-urls: {  }
+        content-urls-suite: {  }
+    ep:
+        ep-ecole-dirigeants: {  }
+        ep-ecole-enseignants: {  }
+    ep-2: {  }

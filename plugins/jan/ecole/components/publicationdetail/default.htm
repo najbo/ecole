@@ -1,0 +1,161 @@
+{% put styles %}
+	<style>
+	      /* Set the size of the div element that contains the map */
+	      #map {
+	        height: 400px;  /* The height is 400 pixels */
+	        width: 100%;  /* The width is the width of the web page */
+	       }
+    </style>
+{% endput %}
+
+
+
+{% if record %}
+
+
+    <h1>{{ record.titre }}</h1>
+
+
+    <!-- Date -->
+
+    <h3>
+    	{{ record.date_event |strftime('%A')|capitalize }} {{ record.date_event | date('d.m.y') }} 
+            {% if record.show_time == 1 %}
+            à {{ record.date_event | date('H:m') }}
+        	{% endif %}
+    </h3>
+
+
+	<!-- Banner Image -->
+    <div>
+    	<figure class="figure">
+    		<img src="{{ record.banner.path }}" title="{{ record.banner.title }}" alt="{{ record.banner.description }}" class="figure-img img-fluid rounded img-responsive">
+    		{% if record.banner.title %}
+    			<figcaption class="figure-caption text-left"><small>{{ record.banner.title }}</small></figcaption>
+    		{% endif %}
+    	</figure>
+    </div>
+
+	<div style="margin-top: 20px; margin-bottom: 20px;">
+		{{ record.corps|raw }}
+	</div>
+
+
+	<!-- Galerie d'images -->
+
+	{% if record.galerie.count > 0 %}
+		<h3>Galerie d'images</h3>
+
+		<ul class="gallery clearfix">
+			{% for image in record.galerie %}
+				<li>
+					<a href="{{ image.thumb(850,auto) }}" title="{{ image.title }}" alt="{{ image.description }}" data-fancybox="gallery" data-caption="{{ image.title}}">
+						<img src="{{ image.thumb(165,165, {'mode':'crop'}) }}">
+					</a>
+						<!-- <div><small>{{ image.title }}</small></div> -->
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+
+	<!-- Liste de douuments -->
+
+	<!-- {{record.documents}} -->
+
+	{% if record.documents.count > 0 %}
+		<h3>Documents</h3>
+
+			<table class="table table-striped table-hover ">
+	            <thead>
+	              <tr>
+	                <th>Nom du fichier</th>
+	                <th>Description</th>
+	                <th>Type</th>
+	                <th>Taille</th>
+	                <th>Date</th>
+	              </tr>
+	         </thead>	
+	         	<tbody>
+					{% for document in record.documents %}
+		                  <tr>
+		                    <td>
+		                    	<a href="{{ document.path }}" target="_blank">
+		                    		{% if document.title %}
+										{{ document.title }}
+									{% else %}
+										{{ document.file_name }}
+									{% endif %}
+								</a>
+							</td>
+							<td>{{ document.description }}</td>
+							<td>{{ document.extension }}</td>
+		                    <td>{{ (document.file_size / 1000)|round }} Kb</td>
+		                    <td>{{ document.updated_at | date('d.m.y') }}</td>
+		                  </tr>
+			{% endfor %}
+			</tbody>
+        </table>
+
+	{% endif %}
+
+
+	{% if record.coordonnees %}
+
+
+   <h3>Emplacement</h3>
+    <!--The div element for the map -->
+    <div id="map" style="margin-bottom: 20px;"></div>
+    	<script>
+			// Initialize and add the map
+			function initMap() {
+			  // The location of Uluru
+			  var emplacement = { {{ record.coordonnees }} };
+			  // The map, centered at Uluru
+			  var map = new google.maps.Map(
+			      document.getElementById('map'), {
+			      		zoom: 14, 
+			      		center: emplacement,
+						mapTypeId: 'hybrid'
+			      		});
+			  // The marker, positioned at Uluru
+			  var marker = new google.maps.Marker({position: emplacement, map: map});
+			}
+		</script>
+			    <!--Load the API from the specified URL
+			    * The async attribute allows the browser to render the page while the API loads
+			    * The key parameter will contain your own API key (which is not needed for this tutorial)
+			    * The callback parameter executes the initMap() function
+			    -->
+		<script async defer
+			 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoc5JtaWapuYEjiwcvMrWXeDUMX2--aR0&callback=initMap&region=CH"">
+		</script>
+
+ {% endif %}
+
+
+
+
+	<!-- Informations -->
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<small>
+				Publié le {{ record.updated_at | date('d.m.y') }} à {{ record.updated_at | date('H:m') }}  par {{ record.user.first_name }}  {{ record.user.last_name }} | {{ record.structure.titre }} |  <span class="badge">{{ record.publicationtype.titre }}</span>
+			</small>
+		</div>
+	</div>
+
+
+
+	<a href="javascript:history.back()" class="btn btn-primary btn-sm">Retour</a>
+
+
+
+
+{% else %}
+	<div>
+    	<h1>{{ notFoundMessage }}</h1>
+    	<a href="/" class="btn btn-primary btn-sm">Page d'accueil</a>
+	</div>
+{% endif %}

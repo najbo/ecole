@@ -1,16 +1,11 @@
 <?php
+$prev = \Indikator\Content\Models\Blog::where('id', '<', $formModel->id)->max('id');
+$next = \Indikator\Content\Models\Blog::where('id', '>', $formModel->id)->min('id');
 
 $pages = Cms\Classes\Page::withComponent('blogPage');
 foreach ($pages as $page) {
     $url = str_replace(':slug', '', $page->url);
 }
-
-$uri  = explode('/', Request::path());
-$slug = \Indikator\Content\Models\Blog::whereId($uri[5])->value('slug');
-
-$previous = \Indikator\Content\Models\Blog::where('id', '<', $uri[5])->max('id');
-$next     = \Indikator\Content\Models\Blog::where('id', '>', $uri[5])->min('id');
-
 ?>
 
 <?php Block::put('breadcrumb') ?>
@@ -58,15 +53,15 @@ $next     = \Indikator\Content\Models\Blog::where('id', '>', $uri[5])->min('id')
                 <a
                     href="<?= $next; ?>"
                     class="oc-icon-angle-right btn-icon pull-right"
-                    style="font-size: 24px; text-decoration:none"
+                    style="font-size: 25px; text-decoration:none"
                     title="<?= e(trans('indikator.content::lang.button.next')) ?>">
                 </a>
                 <?php endif ?>
-                <?php if ($previous): ?>
+                <?php if ($prev): ?>
                 <a
-                    href="<?= $previous; ?>"
+                    href="<?= $prev; ?>"
                     class="oc-icon-angle-left btn-icon pull-right"
-                    style="font-size: 24px; text-decoration:none"
+                    style="font-size: 25px; text-decoration:none"
                     title="<?= e(trans('indikator.content::lang.button.previous')) ?>">
                 </a>
                 <?php endif ?>
@@ -80,7 +75,7 @@ $next     = \Indikator\Content\Models\Blog::where('id', '>', $uri[5])->min('id')
                 <?php endif ?>
                 <?php if (isset($url)): ?>
                 <span class="btn-text pull-right">
-                    <a href="<?php echo $url.$slug ?>" target="_blank"><?= e(trans('cms::lang.editor.preview')) ?></a>
+                    <a href="<?php echo $url.$formModel->slug ?>" target="_blank"><?= e(trans('cms::lang.editor.preview')) ?></a>
                 </span>
                 <?php endif ?>
             </div>

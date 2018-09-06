@@ -1,0 +1,51 @@
+1536095302a:1:{s:14:"menu-items.htm";a:7:{s:8:"fileName";s:14:"menu-items.htm";s:7:"content";s:922:"description = "Menu Items demo"
+
+[viewBag]
+snippetProperties[code][title] = "test"
+snippetProperties[code][type] = "string"
+snippetProperties[code][default] = 1
+snippetProperties[code][options][] = ""
+==
+<ul class="{{ class }}">
+    {% for item in items %}
+        <li 
+            class="{{ item.isActive or item.isChildActive ? 'active' : '' }} 
+            {{ item.items ? 'dropdown' : '' }}"
+        >
+            <a 
+                {% if item.items %}class="dropdown-toggle" data-toggle="dropdown"{% endif %} 
+                href="{{ item.url }}"
+            >
+                {{ item.title }}
+
+                {% if item.items %}<span class="caret"></span>{% endif %}
+            </a>
+
+            {% if item.items %}
+                {% partial 'menu-items' items=item.items class='dropdown-menu' %}
+            {% endif %}
+        </li>
+                        
+    {% endfor %}
+</ul>";s:5:"mtime";i:1535992352;s:6:"markup";s:710:"<ul class="{{ class }}">
+    {% for item in items %}
+        <li 
+            class="{{ item.isActive or item.isChildActive ? 'active' : '' }} 
+            {{ item.items ? 'dropdown' : '' }}"
+        >
+            <a 
+                {% if item.items %}class="dropdown-toggle" data-toggle="dropdown"{% endif %} 
+                href="{{ item.url }}"
+            >
+                {{ item.title }}
+
+                {% if item.items %}<span class="caret"></span>{% endif %}
+            </a>
+
+            {% if item.items %}
+                {% partial 'menu-items' items=item.items class='dropdown-menu' %}
+            {% endif %}
+        </li>
+                        
+    {% endfor %}
+</ul>";s:4:"code";N;s:11:"description";s:15:"Menu Items demo";s:7:"viewBag";a:1:{s:17:"snippetProperties";a:1:{s:4:"code";a:4:{s:5:"title";s:4:"test";s:4:"type";s:6:"string";s:7:"default";s:1:"1";s:7:"options";a:1:{i:0;s:0:"";}}}}}}

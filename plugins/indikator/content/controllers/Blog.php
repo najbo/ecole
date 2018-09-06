@@ -83,4 +83,12 @@ class Blog extends Controller
 
         return $this->listRefresh();
     }
+
+    public function onShowImage()
+    {
+        $this->vars['title'] = Item::where('image', post('image'))->value('title');
+        $this->vars['image'] = '/storage/app/media'.post('image');
+
+        return $this->makePartial('show_image');
+    }
 }

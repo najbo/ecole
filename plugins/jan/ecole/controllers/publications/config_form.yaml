@@ -1,0 +1,10 @@
+name: Publications
+form: $/jan/ecole/models/publication/fields.yaml
+modelClass: Jan\Ecole\Models\Publication
+defaultRedirect: jan/ecole/publications
+create:
+    redirect: 'jan/ecole/publications/update/:id'
+    redirectClose: jan/ecole/publications
+update:
+    redirect: jan/ecole/publications
+    redirectClose: jan/ecole/publications

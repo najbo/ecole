@@ -1,0 +1,196 @@
+// Layout Styles - Banner Intro etc...
+
+.intro-image {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  height: 90vh;
+  margin-top: 60px;
+  padding-top: 200px;
+  h1 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+.text {
+  margin-top: 30px;
+  i {
+    font-size: 34px;
+  }
+}
+.header-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+.intro-divider {
+  width: 40%;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.page-divider {
+  width: 40%;
+  border-top: 1px solid #3e3f3a;
+  border-bottom: 1px solid rgba(62, 63, 58, 1);
+}
+@media (min-width: 375px) and (max-width: 414px) {
+  .intro-image {
+    padding-top: 140px;
+    height: 80vh;
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 26px;
+    }
+  }
+  .intro-divider {
+    width: 90%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 320px) {
+  .intro-image {
+    padding-top: 80px;
+    height: 80vh;
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+.content-image {
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/banner1.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  height: 50vh;
+  margin-top: 60px;
+  padding-top: 120px;
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+/* Box */
+
+.box-main {
+	background: #fff;
+	border-radius: 6px;
+	margin: 0 0 2em 0;
+	padding-top: 3em;
+  img {
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+.box {
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2px 0 0 #e5e5e5;
+	margin: 0 0 2em 0;
+	padding: 3em;
+  section {
+    padding: 3em 2em;
+    text-align: center;
+  }
+
+}
+.box-image {
+	background: #fff;
+	border-radius: 6px;
+	margin: 0 0 2em 0;
+  img {
+    border-radius: 6px 6px 0 0;
+  }
+  .inner-content {
+    padding: 3em;
+  }
+}
+/* CTA */
+
+#cta {
+	background: #e89980;
+	color: #f9e5df;
+	padding: 3.5em 0 4em 0;
+	text-align: center;
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    }
+	}
+
+.major {
+  background: #666;
+  border-radius: 100%;
+  color: #ffffff;
+  cursor: default;
+  display: inline-block;
+  height: 5.5em;
+  line-height: 5.5em;
+  margin: 0 0 2em 0;
+  width: 5.5em!important;
+  &:before {
+    font-size: 2.5em;
+  }
+}
+.border-bottom-box {
+  border-bottom: 2px solid #e5e5e5;
+}
+.border-bottom-box2 {
+  border-bottom: 2px solid #e5e5e5;
+}
+.border-top-box {
+  border-top: 2px solid #e5e5e5;
+}
+.border-right-box {
+  border-right: 2px solid #e5e5e5;
+}
+@media screen and (max-width: 960px) {
+  .border-right-box {
+    border-right: 0px;
+   }
+}
+@media screen and (min-width: 961px) {
+
+  .border-bottom-box2 {
+    border-bottom: 0px;
+   }
+}
+.accent2 {
+  background: #e89980;
+  color: #ffffff;
+}
+.accent3 {
+  background: #7fcdb8;
+  color: #ffffff;
+}
+.accent4 {
+  background: #90b0ba;
+  color: #ffffff;
+}
+.accent5 {
+  background: #e5cb95;
+  color: #ffffff;
+}

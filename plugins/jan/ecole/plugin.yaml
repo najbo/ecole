@@ -20,21 +20,24 @@ permissions:
     jan.ecole.gestion_enseignants:
         tab: 'Gestion d''école'
         label: 'Gère les enseignants'
-    jan.ecole.gestion_tags:
-        tab: 'Gestion d''école'
-        label: 'Gère les tags des publications'
+    jan.ecole.gestion_publications:
+        tab: Publications
+        label: 'Gère les publications de l''école ou des classes'
     jan.ecole.gestion_publication_types:
         tab: Publications
         label: 'Gère les types de publications (news ou vie de classes)'
-    jan.ecole.gestion_informations:
-        tab: Publications
-        label: 'Gère les informations de l''école ou des classes'
-    jan.ecole.gestion_news:
-        tab: Publications
-        label: 'Gères les publications de l''école ou des classes'
     jan.ecole.gestion_publication_etendues:
         tab: Publications
         label: 'Gère les étendues des publications'
+    jan.ecole.gestion_tags:
+        tab: Publications
+        label: 'Gère les tags des publications'
+    jan.ecole.gestion_vacances:
+        tab: 'Gestion d''école'
+        label: 'Gère les vacances des différentes structures'
+    jan.ecole.gestion_vacances_details:
+        tab: 'Gestion d''école'
+        label: 'Gère le détail des vacances (items)'
 navigation:
     ecole:
         label: 'Gestion d''école'
@@ -57,19 +60,32 @@ navigation:
                 label: Classes
                 url: jan/ecole/classes
                 icon: icon-cubes
+                permissions:
+                    - jan.ecole.gestion_classes
             enseignants:
                 label: Enseignants
                 url: jan/ecole/enseignants
                 icon: icon-user
+            vacances:
+                label: Vacances
+                url: jan/ecole/vacances
+                icon: icon-suitcase
     publications:
         label: Publications
-        url: jan/ecole/informations
+        url: jan/ecole/publications
         icon: icon-newspaper-o
+        permissions:
+            - jan.ecole.gestion_publications
+            - jan.ecole.gestion_tags
+            - jan.ecole.gestion_publication_types
+            - jan.ecole.gestion_publication_etendues
         sideMenu:
-            informations:
-                label: Informations
-                url: jan/ecole/informations
+            publications:
+                label: Publications
+                url: jan/ecole/publications
                 icon: icon-pencil
+                permissions:
+                    - jan.ecole.gestion_publications
             tags:
                 label: Tags
                 url: jan/ecole/tags

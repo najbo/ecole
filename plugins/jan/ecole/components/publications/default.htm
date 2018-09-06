@@ -1,0 +1,18 @@
+{% set publications = __SELF__.publications %}
+{% set publicationPage = __SELF__.property('publicationPage') %}
+{% set publicationAllPage = __SELF__.property('publicationAllPage') %}
+{% set detailsUrlParameter = 'id' %}
+{% set detailsKeyColumn = 'id' %}
+
+<!-- {{ __SELF__.property('type') }} -->
+
+{% partial "publications/publications" 
+                publications=publications
+                publicationPage=publicationPage
+                publicationAllPage=publicationAllPage
+                detailsUrlParameter=detailsUrlParameter
+                detailsKeyColumn=detailsKeyColumn
+      %}
+
+
+

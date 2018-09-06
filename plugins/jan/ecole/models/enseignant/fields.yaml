@@ -8,7 +8,7 @@ fields:
         span: auto
         type: text
     description:
-        label: 'jan.ecole::lang.plugin.description'
+        label: Description
         size: ''
         span: full
         type: textarea

@@ -1,0 +1,8 @@
+1536095302a:1:{s:12:"ep-ecole.htm";a:7:{s:8:"fileName";s:12:"ep-ecole.htm";s:7:"content";s:143:"[viewBag]
+title = "Notre école"
+url = "/ep/ecole"
+layout = "ecole-primaire"
+is_hidden = 0
+navigation_hidden = 0
+meta_title = "Ecole"
+==";s:5:"mtime";i:1535271328;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:12:"Notre école";s:3:"url";s:9:"/ep/ecole";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:10:"meta_title";s:5:"Ecole";}s:12:"parsedMarkup";s:0:"";}}

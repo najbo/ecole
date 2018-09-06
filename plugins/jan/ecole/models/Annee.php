@@ -8,6 +8,7 @@ use Model;
 class Annee extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\SoftDelete;
     
     /*
      * Disable timestamps by default.

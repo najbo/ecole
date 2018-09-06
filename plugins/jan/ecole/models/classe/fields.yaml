@@ -40,8 +40,14 @@ tabs:
             type: partial
             tab: Attributions
         is_actif:
-            label: Actif
+            label: 'Actif en backend'
             span: left
+            default: 1
+            type: switch
+            tab: Attributions
+        is_frontend:
+            label: Frontend
+            span: auto
             default: 1
             type: switch
             tab: Attributions

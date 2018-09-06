@@ -1,0 +1,22 @@
+title = "test-detail"
+url = "/test-detail/:id"
+layout = "ecole-primaire"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Jan\Ecole\Models\Publication"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "titre"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{{ record }}
+{% if record %}
+    {{ attribute(record, displayColumn) }}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

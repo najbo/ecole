@@ -46,4 +46,11 @@ class Classe extends Model
         ]
     ];
 
+    public function getFullDegreAttribute () {
+
+        return $this->annee->titre .' | ' .$this->degre .' | '. $this->volee->designation .' - ' . $this->volee->titre;
+
+    }
+
+
 }

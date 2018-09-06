@@ -39,3 +39,6 @@ columns:
     is_actif:
         label: Actif
         type: switch
+    is_frontend:
+        label: Frontend
+        type: switch

@@ -1,0 +1,18 @@
+title = "Détail de compte-rendu"
+url = "/ep/compte-rendus/detail/:id"
+layout = "ecole-primaire"
+is_hidden = 0
+
+[publicationdetail]
+type = 1
+identifierValue = "{{ :id }}"
+notFoundMessage = "Cet article n'existe pas !"
+==
+<?php
+function onInit()
+{
+    $this['activeMenuItem'] = 'informations';
+}
+?>
+==
+{% component 'publicationdetail' %}

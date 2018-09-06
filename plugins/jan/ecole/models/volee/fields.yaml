@@ -27,6 +27,7 @@ fields:
         type: datepicker
         comment: 'Débute un 1er août'
         format: d.m.Y
+        firstDay: 1        
     fin:
         label: 'Date de fin'
         span: auto
@@ -34,13 +35,19 @@ fields:
         type: datepicker
         comment: 'Se termine un 31 juillet'
         format: d.m.Y
+        firstDay: 1
     description:
         label: 'Description de la volée'
         size: ''
         span: full
         type: richeditor
-    actif:
-        label: Actif
+    is_actif:
+        label: 'Actif en backend'
+        span: auto
+        default: 1
+        type: switch
+    is_frontend:
+        label: Frontend
         span: auto
         default: 1
         type: switch

@@ -4,6 +4,13 @@ columns:
         type: text
         searchable: true
         sortable: true
+    user:
+        label: Auteur
+        type: text
+        searchable: true
+        sortable: true
+        select: 'concat(first_name, '' '', last_name)'
+        relation: user
     date_debut:
         label: 'Publié depuis'
         type: date
@@ -14,3 +21,28 @@ columns:
         searchable: true
         sortable: true
         format: d.m.Y
+    publicationtype:
+        label: Type
+        type: text
+        select: titre
+        relation: publicationtype
+    publicationetendue:
+        label: Etendue
+        type: text
+        select: titre
+        relation: publicationetendue
+    structure_id:
+        label: Structure
+        type: text
+        select: titre
+        relation: structure
+    highlight:
+        label: Vedette
+        type: switch
+        searchable: true
+        sortable: true
+    is_frontend:
+        label: Frontend
+        type: switch
+        searchable: true
+        sortable: true

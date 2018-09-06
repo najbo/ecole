@@ -1,0 +1,46 @@
+{% set vacancesRecord = __SELF__.vacances %}
+
+
+
+{% if vacancesRecord %}
+
+	{% for vacances in vacancesRecord %}
+	
+		<h2>{{ vacances.titre }}</h2>
+		{# <div>{{ vacances.annee.titre }} | {{ vacances.structure.titre }}</div> #}
+		<div>{{ vacances.description|raw }}</div>
+
+			<table class="table table-striped table-hover ">
+	            <thead>
+	              <tr>
+	                <th>Période</th>
+	                <th>Début</th>
+	                <th>Fin</th>
+	                <th>Durée</th>
+	                <th>Remarques</th>
+	              </tr>
+	         </thead>	
+	         	<tbody>
+					{% for vacancesPeriode in vacances.vacancesdetail %}
+		                  <tr class="{{ vacancesPeriode.status }}">
+		                    <td>{{ vacancesPeriode.titre }}</td>
+							<td>{{ vacancesPeriode.debut |strftime('%A')|capitalize }} {{ vacancesPeriode.debut | strftime('%e %B %Y') |  convert_encoding('UTF-8', 'ISO-8859-1') }}</td>
+							<td>
+
+								{% if vacancesPeriode.fin %}
+									{{ vacancesPeriode.fin |strftime('%A')|capitalize }} {{ vacancesPeriode.fin | strftime('%e %B %Y')|  convert_encoding('UTF-8', 'ISO-8859-1') }}
+								{% endif %}
+								</td>
+		                    <td>{{ (vacancesPeriode.duree)}}</td>
+		                    <td>{{ (vacancesPeriode.description)}}</td>
+		                  </tr>
+			{% endfor %}
+			</tbody>
+        </table>
+
+	{% endfor %}
+{% endif%}
+
+
+
+	

@@ -13,44 +13,46 @@ fields:
     user:
         label: Auteur
         nameFrom: first_name
-        descriptionFrom: description
         span: auto
-        type: relation
+        type: dropdown
     date_event:
         label: 'Date de survenance'
         mode: datetime
         span: auto
+        default: now
+        required: 0
         type: datepicker
-    etendue_id:
+        format: d.m.Y
+        firstDay: 1
+    publicationetendue_id:
         label: Etendue
         span: left
         type: radio
         default: 1
     classe:
-        label: Classe
-        nameFrom: degre
-        descriptionFrom: description
+        label: 'Classe (année scolaire | degré | volée - période)'
         span: right
-        type: relation
         trigger:
             action: show
-            field: etendue_id
-            condition: value[1]
+            field: publicationetendue_id
+            condition: 'value[1]'
+        type: dropdown
+        comment: 'Le menu déroulant liste les classes actives ; [A] = classe archivée'
     structure:
         label: Structure
         nameFrom: titre
         descriptionFrom: description
         span: right
-        type: relation 
+        type: relation
         trigger:
             action: show
-            field: etendue_id
-            condition: value[2]    
+            field: publicationetendue_id
+            condition: 'value[2]'
     accroche:
         label: Accroche
         size: small
         span: full
-        type: richeditor
+        type: textarea
     corps:
         label: Corps
         size: large
@@ -58,14 +60,19 @@ fields:
         type: richeditor
     date_debut:
         label: 'Publié depuis'
-        mode: date
+        mode: datetime
         span: auto
+        default: now
+        format: d.m.Y
         type: datepicker
+        firstDay: 1
     date_fin:
         label: 'Publié jusqu''à'
-        mode: date
+        mode: datetime
         span: auto
+        format: d.m.Y
         type: datepicker
+        firstDay: 1
     banner:
         label: 'Image d''entete'
         mode: image
@@ -95,18 +102,21 @@ fields:
             extension: auto
         span: left
         type: fileupload
-    # classeB:
-    #     label: 'Record finder'
-    #     nameFrom: degre
-    #     descriptionFrom: description
-    #     list: $/jan/ecole/models/classe/columns.yaml
-    #     span: auto
-    #     type: recordfinder
-    # user_id:
-    #     label: User
-    #     list: $/rainlab/user/models/user/columns.yaml
-    #     prompt: 'Click the %s button to find a user'
-    #     nameFrom: first_name
-    #     descriptionFrom: email
-    #     span: full
-    #     type: recordfinder
+    highlight:
+        label: Vedette
+        span: auto
+        type: switch
+    is_actif:
+        label: 'Actif en backend'
+        span: auto
+        default: 1
+        type: switch
+    is_frontend:
+        label: Frontend
+        span: auto
+        default: 1
+        type: switch
+    show_time:
+        label: 'Afficher l''heure sur le frontend'
+        span: auto
+        type: switch

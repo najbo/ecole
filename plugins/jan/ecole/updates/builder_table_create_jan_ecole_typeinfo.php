@@ -7,20 +7,25 @@ class BuilderTableCreateJanEcoleTypeinfo extends Migration
 {
     public function up()
     {
-        Schema::create('jan_ecole_typeinfo', function($table)
+        Schema::create('jan_ecole_publications_types', function($table)
         {
             $table->engine = 'InnoDB';
-            $table->increments('id')->unsigned();
+            $table->integer('id')->nullable();
             $table->string('titre');
             $table->string('slug')->nullable();
             $table->string('abreviation', 10)->nullable();
+            $table->boolean('is_actif')->default(1);
+            
+            $table->string('no_record')->nullable();
+            $table->string('singulier')->nullable();
+            $table->string('pluriel')->nullable();
+            
             $table->timestamp('deleted_at')->nullable();
-            $table->boolean('actif')->default(1);
         });
     }
     
     public function down()
     {
-        Schema::dropIfExists('jan_ecole_typeinfo');
+        Schema::dropIfExists('jan_ecole_publications_types');
     }
 }

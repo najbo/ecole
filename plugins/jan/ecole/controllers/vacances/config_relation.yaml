@@ -1,0 +1,15 @@
+# =============================================
+# Relation behavior config
+# =============================================
+
+vacancesdetail:
+    label: élément de vacances
+    view:
+        list: $/jan/ecole/models/vacancesdetail/columns.yaml
+        toolbarButtons: create|delete
+
+    manage: 
+        showSearch: true
+        recordsPerPage: 10
+       #list: $/jan/ecole/models/vacancesdetail/columns.yaml
+        form: $/jan/ecole/models/vacancesdetail/fields.yaml

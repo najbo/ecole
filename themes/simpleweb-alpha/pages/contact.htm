@@ -1,0 +1,50 @@
+title = "Contact"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+==
+<?php
+function onSubmit()
+{
+    $rules = [
+        'name'     => 'required|min:2|max:64',
+        'phone'    => 'required',
+        'email'    => 'required|email|min:2|max:64',
+        'comments' => 'required|min:5',
+    ];
+
+    $validation = Validator::make(post(), $rules);
+    if ($validation->fails()) {
+        throw new ValidationException($validation);
+    }
+
+    if (!$group = Backend\Models\UserGroup::whereCode('support-contact')->first()) {
+        throw new ApplicationException('Please create an admin group with code: support-contact');
+    }
+
+    $contacts = $group->users->lists('full_name', 'email');
+    Mail::sendTo($contacts, 'contact::form', post(), function($message) {
+        $message->replyTo(post('email'), post('name'));
+    });
+
+    $this['success'] = true;
+}
+?>
+==
+<section class="container content-margin">
+    <div class="page-header text-center">
+        <h1>Contact</h1>
+        <hr class="intro-divider">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</section>
+
+<section class="container">
+    <section class="box-image padding-helper">
+        <div id="partialContactForm">
+            {% partial 'contact/form' %}
+        </div>
+    </section>
+</section>
