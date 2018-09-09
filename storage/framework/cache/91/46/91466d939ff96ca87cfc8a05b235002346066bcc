@@ -1,4 +1,4 @@
-1536095302a:1:{s:24:"ep-ecole-enseignants.htm";a:8:{s:8:"fileName";s:24:"ep-ecole-enseignants.htm";s:7:"content";s:295:"[viewBag]
+1536516595a:1:{s:24:"ep-ecole-enseignants.htm";a:8:{s:8:"fileName";s:24:"ep-ecole-enseignants.htm";s:7:"content";s:401:"[viewBag]
 title = "Enseignants"
 url = "/ep/enseignants"
 layout = "ecole-primaire"
@@ -9,6 +9,6 @@ meta_title = "Enseignants"
 [enseignants]
 ==
 <p>Enseignants :</p>
-<figure data-component="Jan\Ecole\Components\Enseignants" data-snippet="enseignants">&nbsp;</figure>";s:5:"mtime";i:1535271463;s:6:"markup";s:122:"<p>Enseignants :</p>
-<figure data-component="Jan\Ecole\Components\Enseignants" data-snippet="enseignants">&nbsp;</figure>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:11:"Enseignants";s:3:"url";s:15:"/ep/enseignants";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:10:"meta_title";s:11:"Enseignants";}s:11:"enseignants";a:0:{}s:12:"parsedMarkup";s:122:"<p>Enseignants :</p>
-<figure data-component="Jan\Ecole\Components\Enseignants" data-snippet="enseignants">&nbsp;</figure>";}}
+<figure data-component="Jan\Ecole\Components\Enseignants" data-inspector-id="inspectorid-158687945372" data-property-etendueelements="1" data-property-sortorder="" data-snippet="enseignants">&nbsp;</figure>";s:5:"mtime";i:1536489251;s:6:"markup";s:228:"<p>Enseignants :</p>
+<figure data-component="Jan\Ecole\Components\Enseignants" data-inspector-id="inspectorid-158687945372" data-property-etendueelements="1" data-property-sortorder="" data-snippet="enseignants">&nbsp;</figure>";s:4:"code";N;s:7:"viewBag";a:6:{s:5:"title";s:11:"Enseignants";s:3:"url";s:15:"/ep/enseignants";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";s:10:"meta_title";s:11:"Enseignants";}s:11:"enseignants";a:0:{}s:12:"parsedMarkup";s:228:"<p>Enseignants :</p>
+<figure data-component="Jan\Ecole\Components\Enseignants" data-inspector-id="inspectorid-158687945372" data-property-etendueelements="1" data-property-sortorder="" data-snippet="enseignants">&nbsp;</figure>";}}

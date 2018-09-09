@@ -6,25 +6,25 @@
 name: rainlab.user::lang.group.label
 
 # Model Form Field configuration
-form: $/rainlab/user/models/usergroup/fields.yaml
+form: $/rainlab/user/models/supergroup/fields.yaml
 
 # Model Class name
 modelClass: RainLab\User\Models\UserGroup
 
 # Default redirect location
-defaultRedirect: rainlab/user/usergroups
+defaultRedirect: rainlab/user/supergroups
 
 # Create page
 create:
     title: rainlab.user::lang.groups.create_title
-    redirect: rainlab/user/usergroups/update/:id
-    redirectClose: rainlab/user/usergroups
+    redirect: rainlab/user/supergroups/update/:id
+    redirectClose: rainlab/user/supergroups
 
 # Update page
 update:
     title: rainlab.user::lang.groups.update_title
-    redirect: rainlab/user/usergroups
-    redirectClose: rainlab/user/usergroups
+    redirect: rainlab/user/supergroups
+    redirectClose: rainlab/user/supergroups
 
 # Preview page
 preview:

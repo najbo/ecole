@@ -16,8 +16,8 @@
     - 'Created table jan_ecole_classes_users'
     - builder_table_create_jan_ecole_degres_users.php
 1.0.7:
-    - 'Updated table_backend_users'
-    - add_new_fields.php
+    - 'Extend table_backend_users'
+    - add_new_fields_backend_users.php
 1.0.8:
     - 'Created table jan_ecole_tags'
     - builder_table_create_jan_ecole_tags.php
@@ -32,28 +32,37 @@
     - builder_table_create_jan_ecole_etendue.php
 1.0.12:
     - 'Seed table jan_ecole_publications_types'
-    - seeder1060.php
+    - seeder1012.php
 1.0.13:
     - 'Seed table jan_ecole_publications_etendues'
-    - seeder1063.php
+    - seeder1013.php
 1.0.14:
     - 'Seed backend_user_groups'
-    - seeder1064.php
+    - seeder1014.php
 1.0.15:
     - 'Seed backend_user_roles'
-    - seeder1065.php
+    - seeder1015.php
 1.0.16:
     - 'Seed table jan_ecole_structures'
-    - seeder1067.php
+    - seeder1016.php
 1.0.17:
     - 'Seed table jan_ecole_annees'
-    - seeder1068.php
+    - seeder1017.php
 1.0.18:
     - 'Seed table jan_ecole_volees'
-    - seeder1069.php
+    - seeder1018.php
 1.0.19:
     - 'Created table jan_ecole_vacances'
     - builder_table_create_jan_ecole_vacances.php
 1.0.20:
     - 'Created table jan_ecole_vacances_details'
     - builder_table_create_jan_ecole_vacances_details.php
+1.0.21:
+    - 'Created table jan_ecole_supergroups'
+    - builder_table_create_jan_ecole_super_groups.php
+1.0.22:
+    - 'Seed jan_gestion_supergroups'
+    - seeder1022.php
+1.0.25:
+    - 'Created table jan_ecole_users_etendues'
+    - builder_table_create_jan_ecole_users_etendues.php

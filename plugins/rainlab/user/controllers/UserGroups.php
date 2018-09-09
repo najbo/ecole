@@ -45,6 +45,6 @@ class UserGroups extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('RainLab.User', 'user', 'usergroups');
+        BackendMenu::setContext('RainLab.User', 'user', 'supergroups');
     }
 }

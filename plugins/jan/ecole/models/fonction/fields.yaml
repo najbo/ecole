@@ -1,0 +1,11 @@
+fields:
+    group:
+        label: Groupe
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    fonction:
+        label: Fonction
+        span: auto
+        type: text

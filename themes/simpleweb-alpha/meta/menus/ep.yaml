@@ -14,13 +14,11 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Documents
+        title: Ressources
         nesting: '1'
         type: static-page
-        url: ''
         code: ''
         reference: ep-documents
-        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -30,8 +28,10 @@ items:
         title: 'Dernières nouvelles'
         nesting: '1'
         type: static-page
+        url: ''
         code: informations
         reference: ep-publications
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'

@@ -21,8 +21,28 @@ fields:
         label: Téléphone
         span: auto
         type: text
-    tel_non_public:
-        label: 'Ne pas publier ces informations sur le front-end'
+    is_telnonpublic:
+        label: 'Ne pas publier ces informations sur le frontend'
         span: left
         default: 1
         type: switch
+    is_avatarnonpublic:
+        label: 'Ne pas publier la photo sur le frontend'
+        span: auto
+        type: switch
+    # fonctionsgroupe:
+    #     span: left
+    #     path: $/jan/ecole/controllers/enseignants/_field_supergroup.htm
+    #     type: partial
+    #     tab: Fonctions
+    # structures:
+    #     label: 'Structures'
+    #     span: auto
+    #     nameFrom: titre
+    #     descriptionFrom: description
+    #     type: relation
+    attribution:
+        span: left
+        path: $/jan/ecole/controllers/enseignants/_field_attribution.htm
+        type: partial
+        tab: Fonctions        

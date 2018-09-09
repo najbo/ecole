@@ -1,6 +1,12 @@
 {% if publications.count > 0 %}
+
+  {% if publications.count == 1 %}
+    {% set texteArticles = 'article affiché' %}
+  {% else %}
+    {% set texteArticles = 'articles affichés' %}
+  {% endif %}
     
-    <h5>Il y a {{ publications.count }} articles affichés
+    <h5>Il y a {{ publications.count }} {{ texteArticles }}
       {% if publicationAllPage|staticPage %}
         | <a href="{{ publicationAllPage|staticPage }}">voir tous
       {% endif %}

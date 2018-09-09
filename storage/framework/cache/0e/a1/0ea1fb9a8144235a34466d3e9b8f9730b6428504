@@ -1,4 +1,4 @@
-1536095342a:1:{s:18:"ecole-primaire.htm";a:7:{s:8:"fileName";s:18:"ecole-primaire.htm";s:7:"content";s:1863:"description = "Ecole primaire"
+1536516596a:1:{s:18:"ecole-primaire.htm";a:7:{s:8:"fileName";s:18:"ecole-primaire.htm";s:7:"content";s:1916:"description = "Ecole primaire"
 
 [staticPage]
 useContent = 1
@@ -44,7 +44,10 @@ default = 0
         </section>
         
         <section class="container" style="padding-bottom: 35px;">
+        
+        <div class="box">
              {% page %}
+        </div>
         </section>
 
         <!-- Footer -->
@@ -64,7 +67,7 @@ default = 0
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1535925012;s:6:"markup";s:1782:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1536354457;s:6:"markup";s:1835:"<!DOCTYPE html>
 <html>
     <head>
         {% partial "meta" %}
@@ -104,7 +107,10 @@ default = 0
         </section>
         
         <section class="container" style="padding-bottom: 35px;">
+        
+        <div class="box">
              {% page %}
+        </div>
         </section>
 
         <!-- Footer -->

@@ -20,7 +20,7 @@
 
     <h3>
     	{{ record.date_event |strftime('%A')|capitalize }} {{ record.date_event | date('d.m.y') }} 
-            {% if record.show_time == 1 %}
+            {% if record.is_showtime == 1 %}
             à {{ record.date_event | date('H:m') }}
         	{% endif %}
     </h3>

@@ -28,8 +28,8 @@ class Vacances extends Model
 
     /* Relations */
     public $belongsTo = [
-        'annee' => 'Jan\Ecole\Models\Annee',
-        'structure' => 'Jan\Ecole\Models\Structure'
+        'annee' => ['Jan\Ecole\Models\Annee', 'order' => 'debut'],
+        'structure' => ['Jan\Ecole\Models\Structure', 'order' => 'sort_order']
     ];    
 
     public $hasMany = [

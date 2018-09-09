@@ -1,0 +1,12 @@
+# =============================================
+# Relation behavior config
+# =============================================
+
+attributions:
+    label: Attributions
+    view:
+        list: $/jan/ecole/models/enseignantetendue/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/jan/ecole/models/enseignantetendue/fields.yaml
+        showSearch: true          

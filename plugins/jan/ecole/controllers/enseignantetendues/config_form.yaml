@@ -1,0 +1,10 @@
+name: EnseignantEtendues
+form: $/jan/ecole/models/enseignantetendue/fields.yaml
+modelClass: Jan\Ecole\Models\EnseignantEtendue
+defaultRedirect: jan/ecole/enseignantetendues
+create:
+    redirect: 'jan/ecole/enseignantetendues/update/:id'
+    redirectClose: jan/ecole/enseignantetendues
+update:
+    redirect: jan/ecole/enseignantetendues
+    redirectClose: jan/ecole/enseignantetendues

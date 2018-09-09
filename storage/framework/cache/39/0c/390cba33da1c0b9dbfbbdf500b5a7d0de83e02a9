@@ -1,4 +1,4 @@
-1536095302a:1:{s:14:"menu-items.htm";a:7:{s:8:"fileName";s:14:"menu-items.htm";s:7:"content";s:922:"description = "Menu Items demo"
+1536516596a:1:{s:14:"menu-items.htm";a:7:{s:8:"fileName";s:14:"menu-items.htm";s:7:"content";s:922:"description = "Menu Items demo"
 
 [viewBag]
 snippetProperties[code][title] = "test"
@@ -27,7 +27,7 @@ snippetProperties[code][options][] = ""
         </li>
                         
     {% endfor %}
-</ul>";s:5:"mtime";i:1535992352;s:6:"markup";s:710:"<ul class="{{ class }}">
+</ul>";s:5:"mtime";i:1536338521;s:6:"markup";s:710:"<ul class="{{ class }}">
     {% for item in items %}
         <li 
             class="{{ item.isActive or item.isChildActive ? 'active' : '' }} 

@@ -1,7 +1,13 @@
-{% set enseignants = __SELF__.enseignants %}
+{% set supergroups = __SELF__.enseignants %}
 
-<ul>
-	{% for enseignant in enseignants %}
-		<li>{{ enseignant.first_name }} {{ enseignant.last_name }}</li>
+
+	{% for supergroup in supergroups %}
+		<h2>{{ supergroup.titre }}</h2>
+
+			{% for etendues in supergroup.etendue %}
+
+				<p>{{ etendues.teacher.first_name }} {{ etendues.teacher.last_name }} {{ etendues.fonction }}</p>
+
+		{% endfor %}
+
 	{% endfor %}
-</ul>

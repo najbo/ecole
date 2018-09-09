@@ -1,0 +1,9 @@
+columns:
+    user_group_id:
+        label: Groupe
+        type: text
+        select: name
+        relation: group
+    fonction:
+        label: Fonction
+        type: text

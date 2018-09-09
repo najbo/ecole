@@ -35,7 +35,6 @@ tabs:
             tab: Attributions
         enseignants:
             span: left
-            cssClass: ''
             path: $/jan/ecole/controllers/classes/_field_enseignants.htm
             type: partial
             tab: Attributions

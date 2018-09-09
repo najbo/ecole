@@ -9,6 +9,8 @@ use Model;
  */
 class Enseignant extends Model
 {
+    use \October\Rain\Database\Traits\Validation;
+
     /**
      * @var string The database table used by the model.
      */
@@ -24,6 +26,10 @@ class Enseignant extends Model
      */
     protected $fillable = [];
 
+    public $rules = [
+            'first_name' => 'required',
+            'last_name' => 'required'
+        ];
 
 
     public function getFullNameAttribute()
@@ -35,12 +41,28 @@ class Enseignant extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
+    public $hasMany = [
+        'attributions' => [
+            'Jan\Ecole\Models\EnseignantEtendue',
+            'key' => 'user_id'
+             ],            
+    ];
+
     public $belongsTo = [];
-    public $belongsToMany = [];
+
+    public $belongsToMany = [
+            'structures' => [
+                'Jan\Ecole\Models\Structure',
+                'table' => 'jan_ecole_users_etendues',
+                'key' => 'user_id'
+            ],
+    ];
+
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+
 }

@@ -1,0 +1,22 @@
+fields:
+    structure:
+        label: Struture
+        nameFrom: titre
+        descriptionFrom: description
+        span: auto
+        type: relation
+    supergroup:
+        label: Super-groupe
+        nameFrom: titre
+        descriptionFrom: description
+        span: auto
+        type: relation
+    fonction:
+        label: Fonction
+        span: auto
+        type: text
+    sort_orderby:
+        label: Ordre
+        span: auto
+        default: '0'
+        type: text

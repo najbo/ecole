@@ -116,7 +116,7 @@ fields:
         span: auto
         default: 1
         type: switch
-    show_time:
+    is_showtime:
         label: 'Afficher l''heure sur le frontend'
         span: auto
         type: switch

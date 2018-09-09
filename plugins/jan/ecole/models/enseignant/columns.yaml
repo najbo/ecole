@@ -24,3 +24,10 @@ columns:
         type: text
         invisible: true
         select: 'concat(first_name, '' '', last_name)'
+    structures:
+        label: Structures
+        type: text
+        searchable: true
+        sortable: true
+        select: distinct(titre)
+        relation: structures

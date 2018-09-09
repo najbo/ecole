@@ -1,0 +1,20 @@
+columns:
+    structure:
+        label: Structure
+        type: text
+        searchable: true
+        sortable: true
+        select: titre
+        relation: structure
+    supergroup:
+        label: Super-groupe
+        type: text
+        searchable: true
+        sortable: true
+        select: titre
+        relation: supergroup
+    fonction:
+        label: Fonction
+        type: text
+        searchable: true
+        sortable: true

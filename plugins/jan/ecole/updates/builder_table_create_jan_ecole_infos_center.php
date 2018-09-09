@@ -29,7 +29,7 @@ class BuilderTableCreateJanEcoleInfosCenter extends Migration
             $table->dateTime('date_fin')->nullable();
             $table->boolean('is_actif')->default(1);
             $table->boolean('is_frontend')->default(1);
-            $table->boolean('show_date')->default(0);
+            $table->boolean('show_time')->default(0);
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

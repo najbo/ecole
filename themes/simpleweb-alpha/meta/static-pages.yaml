@@ -6,12 +6,11 @@ static-pages:
             ep-ecole-presentation: {  }
             ep-ecole-direction: {  }
             ep-ecole-enseignants: {  }
-            ep-ecole-regles-de-vie: {  }
             ep-ecole-sante-et-prevention: {  }
-            ep-ecole-chemin-de-lecole: {  }
         ep-documents:
             ep-documents-horaires: {  }
             ep-documents-vacances-et-conges: {  }
+            ep-ecole-regles-de-vie: {  }
             ep-formulaires: {  }
         ep-publications:
             ep-informations: {  }

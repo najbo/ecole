@@ -1,0 +1,10 @@
+name: BackendGroups
+form: $/jan/ecole/models/backendgroup/fields.yaml
+modelClass: Jan\Ecole\Models\BackendGroup
+defaultRedirect: jan/ecole/backendgroups
+create:
+    redirect: 'jan/ecole/backendgroups/update/:id'
+    redirectClose: jan/ecole/backendgroups
+update:
+    redirect: jan/ecole/backendgroups
+    redirectClose: jan/ecole/backendgroups
