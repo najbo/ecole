@@ -1,8 +1,8 @@
-1536516596a:1:{s:32:"es-documents-vacances-detail.htm";a:7:{s:8:"fileName";s:32:"es-documents-vacances-detail.htm";s:7:"content";s:159:"[viewBag]
+1536692599a:1:{s:32:"es-documents-vacances-detail.htm";a:7:{s:8:"fileName";s:32:"es-documents-vacances-detail.htm";s:7:"content";s:159:"[viewBag]
 title = "Détail"
 url = "/es/documents/vacances/detail"
 layout = "ecole-primaire-2"
 is_hidden = 0
 navigation_hidden = 0
 ==
-<p>Menu détail</p>";s:5:"mtime";i:1536338521;s:6:"markup";s:19:"<p>Menu détail</p>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:7:"Détail";s:3:"url";s:29:"/es/documents/vacances/detail";s:6:"layout";s:16:"ecole-primaire-2";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:19:"<p>Menu détail</p>";}}
+<p>Menu détail</p>";s:5:"mtime";i:1535990752;s:6:"markup";s:19:"<p>Menu détail</p>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:7:"Détail";s:3:"url";s:29:"/es/documents/vacances/detail";s:6:"layout";s:16:"ecole-primaire-2";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:19:"<p>Menu détail</p>";}}

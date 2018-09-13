@@ -1,7 +1,7 @@
-1536516596a:1:{s:25:"ep-services-impressum.htm";a:7:{s:8:"fileName";s:25:"ep-services-impressum.htm";s:7:"content";s:141:"[viewBag]
+1536692599a:1:{s:25:"ep-services-impressum.htm";a:7:{s:8:"fileName";s:25:"ep-services-impressum.htm";s:7:"content";s:141:"[viewBag]
 title = "Impressum et responsabilité"
 url = "/ep/impressum"
 layout = "ecole-primaire"
 is_hidden = 0
 navigation_hidden = 0
-==";s:5:"mtime";i:1536338521;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:28:"Impressum et responsabilité";s:3:"url";s:13:"/ep/impressum";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:0:"";}}
+==";s:5:"mtime";i:1535271535;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:28:"Impressum et responsabilité";s:3:"url";s:13:"/ep/impressum";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:0:"";}}

@@ -1,7 +1,7 @@
-1536516595a:1:{s:16:"ep-documents.htm";a:7:{s:8:"fileName";s:16:"ep-documents.htm";s:7:"content";s:124:"[viewBag]
+1536692599a:1:{s:16:"ep-documents.htm";a:7:{s:8:"fileName";s:16:"ep-documents.htm";s:7:"content";s:124:"[viewBag]
 title = "Ressources"
 url = "/ep/ressources"
 layout = "ecole-primaire"
 is_hidden = 0
 navigation_hidden = 0
-==";s:5:"mtime";i:1536403289;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:10:"Ressources";s:3:"url";s:14:"/ep/ressources";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:0:"";}}
+==";s:5:"mtime";i:1536612213;s:6:"markup";s:0:"";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:10:"Ressources";s:3:"url";s:14:"/ep/ressources";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:0:"";}}

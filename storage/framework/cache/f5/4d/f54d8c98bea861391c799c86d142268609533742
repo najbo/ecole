@@ -1,0 +1,218 @@
+1536692614a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5997:"title = "Home"
+url = "/home"
+layout = "ecole-primaire"
+is_hidden = 0
+==
+<section class="intro-image">
+    <div class="container-fluid">
+        {% content "welcome.htm" %}
+    </div>
+</section>
+
+<section id="main" class="container margin-helper">
+    <div class="box-main">
+        <header>
+            <h2 class="text-center">Ecole primaire de Tavannes</h2>
+            <hr class="intro-divider" />
+            <p class="text-center">Designed with Bootstrap 3.3.6. Fully featured with LESS. Custom stylings and Parallax effect made with pure CSS3.</p>
+        </header>
+        <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+    </div>
+</section>
+
+<section class="container margin-helper">
+    <div class="box">
+        <h2 class="text-center">Clean styled boxes.</h2>
+        <hr class="intro-divider text-left">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="box">
+        <div class="row">
+        <section class="col-md-6 col-lg-6 border-bottom-box border-right-box">
+            <span class="icon major fa-bolt accent2"></span>
+            <h3>Magna etiam</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        <section class="col-md-6 col-lg-6 border-bottom-box">
+            <span class="icon major fa-area-chart accent3"></span>
+            <h3>Ipsum dolor</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        </div>
+        <div class="row">
+        <section class="col-md-6 col-lg-6 border-bottom-box2 border-right-box">
+            <span class="icon major fa-cloud accent4"></span>
+            <h3>Sed feugiat</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        <section class="col-md-6 col-lg-6">
+            <span class="icon major fa-lock accent5"></span>
+            <h3>Enim phasellus</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+                <h3>Sed lorem adipiscing</h3>
+                <hr class="intro-divider">
+                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <a href="#" class="btn btn-default">Learn More</a>
+            </div>
+        </section>
+        </div>
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+                <h3>Accumsan integer</h3>
+                <hr class="intro-divider">
+                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <a href="#" class="btn btn-default">Learn More</a>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section id="cta"><!-- CTA -->
+    <h3>Sign up for beta access</h3>
+    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+    <form class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" />
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control btn btn-danger" type="submit" value="Sign Up"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>";s:5:"mtime";i:1536612213;s:6:"markup";s:5920:"<section class="intro-image">
+    <div class="container-fluid">
+        {% content "welcome.htm" %}
+    </div>
+</section>
+
+<section id="main" class="container margin-helper">
+    <div class="box-main">
+        <header>
+            <h2 class="text-center">Ecole primaire de Tavannes</h2>
+            <hr class="intro-divider" />
+            <p class="text-center">Designed with Bootstrap 3.3.6. Fully featured with LESS. Custom stylings and Parallax effect made with pure CSS3.</p>
+        </header>
+        <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+    </div>
+</section>
+
+<section class="container margin-helper">
+    <div class="box">
+        <h2 class="text-center">Clean styled boxes.</h2>
+        <hr class="intro-divider text-left">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="box">
+        <div class="row">
+        <section class="col-md-6 col-lg-6 border-bottom-box border-right-box">
+            <span class="icon major fa-bolt accent2"></span>
+            <h3>Magna etiam</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        <section class="col-md-6 col-lg-6 border-bottom-box">
+            <span class="icon major fa-area-chart accent3"></span>
+            <h3>Ipsum dolor</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        </div>
+        <div class="row">
+        <section class="col-md-6 col-lg-6 border-bottom-box2 border-right-box">
+            <span class="icon major fa-cloud accent4"></span>
+            <h3>Sed feugiat</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        <section class="col-md-6 col-lg-6">
+            <span class="icon major fa-lock accent5"></span>
+            <h3>Enim phasellus</h3>
+            <hr class="intro-divider">
+            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+                <h3>Sed lorem adipiscing</h3>
+                <hr class="intro-divider">
+                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <a href="#" class="btn btn-default">Learn More</a>
+            </div>
+        </section>
+        </div>
+        <div class="col-md-6">
+        <section class="box-image">
+            <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+            <div class="inner-content text-center">
+                <h3>Accumsan integer</h3>
+                <hr class="intro-divider">
+                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <a href="#" class="btn btn-default">Learn More</a>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+
+<section id="cta"><!-- CTA -->
+    <h3>Sign up for beta access</h3>
+    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+    <form class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Email Address" />
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control btn btn-danger" type="submit" value="Sign Up"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:5:"/home";s:6:"layout";s:14:"ecole-primaire";s:9:"is_hidden";s:1:"0";}}

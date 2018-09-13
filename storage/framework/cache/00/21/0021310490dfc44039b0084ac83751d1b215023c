@@ -1,4 +1,4 @@
-1536516596a:1:{s:13:"ep/footer.htm";a:5:{s:8:"fileName";s:13:"ep/footer.htm";s:7:"content";s:2155:"<section class="footer-text">
+1536692599a:1:{s:13:"ep/footer.htm";a:5:{s:8:"fileName";s:13:"ep/footer.htm";s:7:"content";s:2115:"<section class="footer-text">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-6">
@@ -38,7 +38,7 @@
     <ul class="copyright">
         <li>Copyright &copy {{ "now"|date("Y") }}; Ecoles Tavannes. Tous droits réservés.</li>
     </ul>
-</section>";s:5:"mtime";i:1536338521;s:6:"markup";s:2155:"<section class="footer-text">
+</section>";s:5:"mtime";i:1535273080;s:6:"markup";s:2115:"<section class="footer-text">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-6">

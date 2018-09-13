@@ -1,4 +1,4 @@
-1536516596a:1:{s:29:"publications/publications.htm";a:5:{s:8:"fileName";s:29:"publications/publications.htm";s:7:"content";s:1885:"{% if publications.count > 0 %}
+1536692600a:1:{s:29:"publications/publications.htm";a:5:{s:8:"fileName";s:29:"publications/publications.htm";s:7:"content";s:1885:"{% if publications.count > 0 %}
 
   {% if publications.count == 1 %}
     {% set texteArticles = 'article affiché' %}
@@ -46,7 +46,7 @@
 {% else %}
     <h5 class="no-data">{{ __SELF__.property('noPublicationMessage') }}</h5>
 {% endif %}
-";s:5:"mtime";i:1536354064;s:6:"markup";s:1883:"{% if publications.count > 0 %}
+";s:5:"mtime";i:1536612213;s:6:"markup";s:1883:"{% if publications.count > 0 %}
 
   {% if publications.count == 1 %}
     {% set texteArticles = 'article affiché' %}
