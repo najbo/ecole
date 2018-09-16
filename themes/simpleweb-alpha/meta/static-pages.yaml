@@ -21,6 +21,7 @@ static-pages:
             ep-services-liens-externes: {  }
             ep-services-backend: {  }
             ep-services-impressum: {  }
+            ep-contact: {  }
     es:
         es-notre-ecole: {  }
         es-documents:

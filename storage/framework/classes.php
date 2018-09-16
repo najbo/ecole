@@ -528,4 +528,13 @@
   'rainlab\\user\\Controllers\\users' => 'plugins\\rainlab\\user\\controllers\\users.php',
   'Jan\\Ecole\\Models\\EnseignantEtendue' => 'plugins\\jan\\ecole\\models\\EnseignantEtendue.php',
   'backend\\Controllers\\usergroups' => 'modules\\backend\\controllers\\usergroups.php',
+  'offline\\sitesearch\\Plugin' => 'plugins\\offline\\sitesearch\\Plugin.php',
+  'janvince\\smallcontactform\\Plugin' => 'plugins\\janvince\\smallcontactform\\Plugin.php',
+  'janvince\\smallcontactform\\Controllers\\messages' => 'plugins\\janvince\\smallcontactform\\controllers\\messages.php',
+  'JanVince\\SmallContactForm\\Models\\MessageExport' => 'plugins\\janvince\\smallcontactform\\models\\MessageExport.php',
+  'JanVince\\SmallContactForm\\Models\\Message' => 'plugins\\janvince\\smallcontactform\\models\\Message.php',
+  'JanVince\\SmallContactForm\\Models\\Settings' => 'plugins\\janvince\\smallcontactform\\models\\Settings.php',
+  'JanVince\\SmallContactForm\\Components\\SmallContactForm' => 'plugins\\janvince\\smallcontactform\\components\\SmallContactForm.php',
+  'system\\Controllers\\maillayouts' => 'modules\\system\\controllers\\maillayouts.php',
+  'system\\Controllers\\mailpartials' => 'modules\\system\\controllers\\mailpartials.php',
 );

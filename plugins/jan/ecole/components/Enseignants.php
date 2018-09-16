@@ -3,6 +3,7 @@
 use Cms\Classes\ComponentBase;
 
 use Jan\Ecole\Models\Enseignant;
+use Jan\Ecole\Models\EnseignantEtendue;
 use Jan\Ecole\Models\Structure;
 use Jan\Ecole\Models\SuperGroup;
 
@@ -74,10 +75,21 @@ class Enseignants extends ComponentBase {
 
 		 $query = SuperGroup::all();
 
+		$query = SuperGroup::with(['etendue' => function ($q) {
+		  $q->where('structure_id', 2);
+		}])->get(); // or get() or whatever
+				 // $this->property('etendueElements')
 
-		$query = SuperGroup::whereHas('etendue', function ($query) {
-     		$query->where('structure_id', $this->property('etendueElements'));
+		$query = SuperGroup::orderBy('sort_order')->whereHas('etendue', function ($query) {
+     			$query->where('structure_id', 2);
  			})->get();
+
+
+
+		// $query = EnseignantEtendue::
+		// 	groupBy('supergroup_id', 'user_id')
+  		//  ->having('structure_id', 1)
+		// 	->get();
 
 		return $query;
 	}

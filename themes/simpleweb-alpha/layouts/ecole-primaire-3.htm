@@ -1,0 +1,72 @@
+description = "Ecole primaire 3"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+{variable name="banner" label="Banner" tab="Image de titre" type="mediafinder" mode="image"}{/variable}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial "meta" %}
+    </head>
+    <body>
+        {% set hasChildren = (staticPage.parent ?: staticPage.page).children %}
+
+        <!-- Header -->
+        <header id="main-header">
+            
+            {% partial "ep/header" %}
+            
+        </header>
+
+        <!-- Content -->
+        
+        <section class="container content-margin">
+
+
+        {% if hasChildren %}
+            <div id="layout-subnav">
+                <div class="container">
+                    {% partial 'subnav' page=staticPage.page %}
+                </div>
+            </div>
+        {% endif %}
+                        
+
+
+            <div class="page-header text-center" style="margin-bottom:0px; padding-bottom: 0px;">
+                <h1> {{ this.page.title}}</h1>
+                <hr class="intro-divider">
+                {% if this.page.meta_description %}
+                    <div>{{ this.page.meta_description }}</div>
+                {% endif %}
+            </div>
+        </section>
+        
+        <section class="container" style="padding-bottom: 35px;">
+        
+        <div class="box">
+             {% page %}
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            {% partial "ep/footer" %}
+        </footer>
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ [
+            'assets/js/bootstrap.min.js',
+            'assets/js/app.js'
+        ]|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>

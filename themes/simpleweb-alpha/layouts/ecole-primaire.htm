@@ -4,8 +4,9 @@ description = "Ecole primaire"
 useContent = 1
 default = 0
 ==
+{variable name="banner_page" label="Banner" tab="Banner" type="mediafinder" mode="image"}{/variable}
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         {% partial "meta" %}
     </head>
@@ -21,34 +22,53 @@ default = 0
 
         <!-- Content -->
         
-        <section class="container content-margin">
+       <!--  <section class="container content-margin"> -->
 
-
-        {% if hasChildren %}
-            <div id="layout-subnav">
-                <div class="container">
-                    {% partial 'subnav' page=staticPage.page %}
-                </div>
+<section class="container content-margin">
+    {% if hasChildren %}
+        <div id="layout-subnav" style="margin-bottom: 10px;">
+            <div class="container">
+                {% partial 'subnav' page=staticPage.page %}
             </div>
-        {% endif %}
-                        
-
-
-            <div class="page-header text-center" style="margin-bottom:0px; padding-bottom: 0px;">
-                <h1> {{ this.page.title}}</h1>
-                <hr class="intro-divider">
-                {% if this.page.meta_description %}
-                    <div>{{ this.page.meta_description }}</div>
-                {% endif %}
-            </div>
-        </section>
-        
-        <section class="container" style="padding-bottom: 35px;">
-        
-        <div class="box">
-             {% page %}
         </div>
-        </section>
+    {% endif %}                  
+
+
+    <section class="box-image" style="border-radius: 6px 6px 0px 0px; margin-bottom: 0px;">
+
+        {% if banner_page %}
+
+            <img class="img-responsive" src="{{ banner_page|media }}" alt="" />
+
+        {% else %}
+            <img class="img-responsive" src="{{ 'assets/images/banner.jpg'|theme }}" alt="" />
+        {% endif %}
+       
+        <div class="inner-content text-center" style="padding-top: 20px; padding-bottom: 20px;">
+            <h2>
+            {% if this.page.meta_title %}    
+                {{ this.page.meta_title}}
+            {% else %}
+                {{ this.page.title}}
+            {% endif %}
+            </h2>
+
+            <hr class="intro-divider">
+
+            {% if this.page.meta_description %}
+                <p class="text-center">{{ this.page.meta_description }}</p>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="box" style="border-radius: 0px 0px 6px 6px; margin-top: 0px; padding-top: 2px;  padding-bottom: 15px;">
+        <div class="inner-content" style="margin-bottom: 0px; padding-bottom: 0px;">    
+            {% page %}
+        </div>
+    </section>  
+
+</section>
+
 
         <!-- Footer -->
         <footer id="footer">

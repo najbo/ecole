@@ -8,21 +8,21 @@
     
     <h5>Il y a {{ publications.count }} {{ texteArticles }}
       {% if publicationAllPage|staticPage %}
-        | <a href="{{ publicationAllPage|staticPage }}">voir tous
+        | <a href="{{ publicationAllPage|staticPage }}">voir tous</a>
       {% endif %}
     </h5>
 
 	<div class="list-group">
 		{% for publication in publications %}
 
-      <div class="list-group-item" style="clear: left;">
+      <div class="list-group-item" style="overflow: auto;">
 
       <!--  <a href="{{ __SELF__.property('publicationPage')|app }}/detail/{{ publication.id }}"> -->
       {% spaceless %}        
         <a href="{{ publicationPage|page({ (detailsUrlParameter): attribute(publication, detailsKeyColumn) }) }}">
 
           	<h4 class="">{{ publication.date_event |strftime('%A')|capitalize }} {{ publication.date_event | date('d.m.y') }} 
-              {% if publication.show_time == 1 %}
+              {% if publication.is_showtime == 1 %}
                 à {{ publication.date_event | date('H:m') }}
               {% endif %}
 

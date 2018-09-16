@@ -63,6 +63,13 @@ class Plugin extends PluginBase
 
     	UserModel::extend(function($model){
             # $model->hasOne['ecole_enseignant'] = ['Backend\Models\User']; # ajouter au joins le nom du plugin avant le nom de la table !
+
+            $model->belongsToMany['structures'] = [
+                'Jan\Ecole\Models\Structure',
+                'table' => 'jan_ecole_users_etendues',
+                'key' => 'user_id'
+            ];
+
     	});
 
         /* Ajout de champs aux publications */
